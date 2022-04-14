@@ -27,22 +27,44 @@ body {
 }
 
 .container {
+
+}
+
+nav {
+  width: 100%;
   display: flex;
+  background-color: #06071A;
+  height: 10vh;
+  z-index: 1;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  justify-content: right;
+}
+
+#navlinks {
+  list-style: none;
+}
+
+#navlinks > li{
+  display: inline;
+  padding-right: 1em;
+}
+
+li > a {
+  text-decoration: none;
+  color:#78775D;
+  cursor: pointer;
 }
 
 .card-border{
   margin: auto;
+  padding: 1vh;
   width: 60vw;
   background: linear-gradient(45deg, #646A8D, #5D5370, #87644C, #78775D); 
   border-radius: 3em;
 }
 .card{
   margin: 1vh;
-  padding: 5vh;
+  padding: 3vh;
   background-color: #06071A;
   border-radius: 3em;
   color: #646A8D;
