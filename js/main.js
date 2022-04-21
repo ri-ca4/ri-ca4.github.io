@@ -1,3 +1,10 @@
+/*
+  Author: Riley
+  main script for landing page
+*/
+
+
+
 window.onscroll = function() {stickyNav()};
 
 
