@@ -8,6 +8,7 @@
 window.onscroll = function() {stickyNav()};
 
 
+//how do i make this smoother?
 var navbar = document.querySelector('nav');
 var sticky = navbar.offsetTop; //the distance of navbar from top of page
 //function to keep navbar at top
@@ -19,3 +20,6 @@ function stickyNav() {
     navbar.classList.remove("sticky");
   }
 };
+
+//On form submit create and send email -- How?
+//Form functions:
