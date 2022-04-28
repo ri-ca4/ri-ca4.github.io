@@ -161,3 +161,34 @@ footer {
   background-color: #000066;
   color:#cccccc;
 }
+
+.contact-form{
+  color:#000066;
+  padding: 2vh;
+}
+
+fieldset {
+  display: flex;
+  background-color: #cccccc7a;
+  border-radius: 1em;
+  border: .5em solid #000066
+}
+
+.form-group{
+  margin: 1em;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.center{
+  align-self: center;
+}
+.submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
