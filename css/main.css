@@ -36,6 +36,11 @@ p{
   font-family: 'Calibri';
 }
 
+.flex {
+  width: 100vw;
+  display: flex;
+}
+
 .full-screen{
   height: 100vh;
   display: flex;
@@ -111,6 +116,28 @@ li > a {
   padding: 5vh;
 }
 
+.bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+.bio .img{/*will be using img tag instead of div with class*/
+  margin: 2vh 2vw;
+  height: 90%;
+  width: 25%;/*will change when I have an image*/
+  border: 1px solid black /*will remove*/
+}
+
+.bio .description{
+  height: 90%;
+  text-align: justify;
+  border: 1px solid black; /*will remove*/
+  width: 75%;
+}
+
 header {
   color:#cccccc;
   text-shadow: 0px 0px 1em #000066;
@@ -121,9 +148,6 @@ header {
   font-size: 10em;
   margin: 0;
 }
-
-
-
 
 footer {
   height:15vh;
