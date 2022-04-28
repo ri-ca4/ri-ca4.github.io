@@ -48,6 +48,13 @@ p{
   justify-content: center;
 }
 
+.half-screen{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav {
   width: 100%;
   display: flex;
