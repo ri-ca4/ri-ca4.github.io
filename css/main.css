@@ -26,7 +26,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #06071A;
 }
 
 h1{
@@ -39,6 +38,9 @@ p{
 
 .full-screen{
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -93,8 +95,35 @@ li > a {
 }
 
 .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   background-color: #000066;
 }
+
+.card-row {
+  height: 75vh;
+  width: 25vw;
+  background: #cccccc;
+  color:#000066;
+  border-radius: 3em;
+  padding: 5vh;
+}
+
+header {
+  color:#cccccc;
+  text-shadow: 0px 0px 1em #000066;
+  text-align: center;
+}
+
+#header {
+  font-size: 10em;
+  margin: 0;
+}
+
+
+
 
 footer {
   height:15vh;
