@@ -21,5 +21,5 @@ function stickyNav() {
   }
 };
 
-//On form submit create and send email -- How?
+
 //Form functions:
