@@ -12,6 +12,7 @@ Style and Structure
     - [ ] transparency in card backgrounds
     - [ ] border thickness and radius
     - [ ] height of divs for better flow
+    - [ ] text style and layout with content added
 
 ## JS
 
@@ -19,25 +20,22 @@ Style and Structure
 
 ## CONTENT
 
-Home page
+- [ ] About Me page
+    - [ ] blurb
+    - [ ] bio
+    - [ ] why web dev
+    - [ ] values
+    - [x] goals overview
 
-- [ ] bio
-- [ ] projects overview
-- [ ] skills overview
-- [ ] goals overview
+- [ ] Projects page
+    - [ ] projects overview
+    - [ ] projects descriptions
+    - [ ] projects links
 
-About Me page
+## DESIGN
 
-- [ ] blurb
-- [ ] bio
-- [ ] why web dev
-- [ ] values
-
-Projects page
-
-- [ ] projects overview
-- [ ] projects descriptions
-- [ ] projects links
+- [ ] design buttons for navbar to match style of icons
+- [ ] design header to match style of icons and navbar
 
 ## ORGANIZATION
 
@@ -57,3 +55,8 @@ Projects page
 - [x] bio image
 - [x] footer content
 - [x] footer style
+
+- [x] Home page
+    - [x] bio
+    - [x] projects overview
+    - [x] skills overview
