@@ -9,14 +9,15 @@ Style and Structure
 - [ ] media queries
 - [ ] 404 page
 - [ ] refine overall style of website
-    - [ ] transparency in card backgrounds
-    - [ ] border thickness and radius
-    - [ ] height of divs for better flow
+    - [x] transparency in card backgrounds
+    - [x] border thickness and radius
+    - [ ] height and width of divs for better flow
     - [ ] text style and layout with content added
+
 
 ## JS
 
-- [ ] fix glitchy nav-bar
+
 
 ## CONTENT
 
@@ -34,8 +35,8 @@ Style and Structure
 
 ## DESIGN
 
-- [ ] design buttons for navbar to match style of icons
-- [ ] design header to match style of icons and navbar
+- [ ] favicon.ico
+- [ ] some sort of logo to balance out nav bar
 
 ## ORGANIZATION
 
@@ -44,7 +45,7 @@ Style and Structure
 
 ## PROJECTS
 
-- [ ] choose which projects to showcase
+- [x] choose which projects to showcase
 - [ ] polish projects
 - [ ] add project files 
 - [ ] link to projects and provide github information
@@ -60,3 +61,8 @@ Style and Structure
     - [x] bio
     - [x] projects overview
     - [x] skills overview
+
+- [-] fix glitchy nav-bar
+
+- [x] design buttons for navbar to match style of icons
+- [x] design header to match style of icons and navbar

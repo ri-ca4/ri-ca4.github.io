@@ -39,6 +39,7 @@ p{
 .flex {
   width: 100vw;
   display: flex;
+  flex-direction: column;
 }
 
 .full-screen{
@@ -59,7 +60,7 @@ nav {
   width: 100%;
   display: flex;
   background-color: #000066;
-  height: 10vh;
+  height:fit-content;
   z-index: 1;
   align-items: center;
   justify-content: right;
@@ -67,22 +68,18 @@ nav {
 
 #navlinks {
   list-style: none;
-}
-
-#navlinks:last-child {
-  margin-right: 3em;
+  padding-top: 1em;
 }
 
 #navlinks > li{
   display: inline;
-  padding-right: 1em;
+  margin-right: 2em;
   font-family: 'Vollkorn', serif;
+  cursor: pointer;
 }
 
-li > a {
-  text-decoration: none;
-  color:#cccccc;
-  cursor: pointer;
+img.btn {
+  height: 30px;
 }
 
 .sticky {
@@ -94,11 +91,17 @@ li > a {
 .card{
   margin: 20vh;
   padding: 5vh;
-  background-color: #cccccc;
+  background-color: #ffffffaf;
   border: 1em solid #000066;
   border-radius: 3em;
   color: #000066;
   text-align: justify;
+}
+
+#homebio{
+  margin-top: 0;
+  width: 50vw;
+  align-self: center;
 }
 
 .card h1 {
@@ -112,14 +115,16 @@ li > a {
   align-items: center;
   justify-content: space-around;
   background-color: #000066;
+  margin: 0 5vw;
+  border-radius: 1em;
 }
 
 .card-row {
   height: 75vh;
   width: 25vw;
-  background: #cccccc;
+  background: #ffffff;
   color:#000066;
-  border-radius: 3em;
+  border-radius: 1em;
   padding: 5vh;
 }
 
@@ -148,7 +153,7 @@ img#bio-image{
 }
 
 header {
-  color:#cccccc;
+  color:#ffffff;
   text-shadow: 0px 0px 1em #000066;
   text-align: center;
 }
@@ -161,7 +166,7 @@ header {
 footer {
   height:10vh;
   background-color: #000066;
-  color:#cccccc;
+  color:#ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,14 +190,15 @@ footer h3{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10vh;
-  padding: 5vh;
+  padding: 10vh;
+  height: 90vh;
 }
 
 #contact-list{
-  background-color: #ffffffeb;
+  background-color: #ffffffa8;
   padding: 5vh;
   border: 1vh solid #000066;
+  height: 80%;
 }
 
 .contact{
