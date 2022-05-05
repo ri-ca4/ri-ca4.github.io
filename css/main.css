@@ -162,7 +162,7 @@ footer {
   color:#cccccc;
 }
 
-.contact-form{
+/* .contact-form{
   color:#000066;
   padding: 2vh;
 }
@@ -176,8 +176,8 @@ fieldset {
 
 .form-group{
   margin: 1em;
-}
-
+} */
+/* 
 .left{
   float: left;
 }
@@ -186,9 +186,40 @@ fieldset {
 }
 .center{
   align-self: center;
-}
-.submit{
+} */
+/* .submit{
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+#contactPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh;
+  padding: 5vh;
+}
+
+#contact-list{
+  background-color: #ffffffeb;
+  padding: 5vh;
+  border: 1vh solid #000066;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.contact > h4{
+  color:#000066;
+}
+
+img.icon{
+  height: 10vh;
+  width: auto;
+  float:left;
 }
