@@ -10,6 +10,10 @@ Style and Structure
 - [ ] footer style
 - [ ] media queries
 - [ ] 404 page
+- [ ] refine overall style of website
+    - [ ] transparency in card backgrounds
+    - [ ] border thickness and radius
+    - [ ] height of divs for better flow
 
 ## JS
 
@@ -26,7 +30,6 @@ Home page
 
 About Me page
 
-- [ ] bio image
 - [ ] blurb
 - [ ] bio
 - [ ] why web dev
@@ -53,3 +56,4 @@ Projects page
 # BACKLOG
 
 # DONE
+- [x] bio image

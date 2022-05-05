@@ -131,17 +131,19 @@ li > a {
   height: 60vh;
 }
 
-.bio .img{/*will be using img tag instead of div with class*/
-  margin: 2vh 2vw;
+.bio .img{
   height: 90%;
-  width: 25%;/*will change when I have an image*/
-  border: 1px solid black /*will remove*/
+}
+
+img#bio-image{
+  height: 100%;
+  width: auto;
+  border-radius: 1em;
 }
 
 .bio .description{
   height: 90%;
   text-align: justify;
-  border: 1px solid black; /*will remove*/
   width: 75%;
 }
 
