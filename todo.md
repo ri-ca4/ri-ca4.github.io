@@ -6,8 +6,6 @@ Tasks needed to complete and/or update portfolio
 
 Style and Structure
 
-- [ ] footer content
-- [ ] footer style
 - [ ] media queries
 - [ ] 404 page
 - [ ] refine overall style of website
@@ -57,3 +55,5 @@ Projects page
 
 # DONE
 - [x] bio image
+- [x] footer content
+- [x] footer style
