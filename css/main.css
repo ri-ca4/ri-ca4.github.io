@@ -4,6 +4,7 @@
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+
 }
 
 * {
@@ -22,14 +23,14 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: url("../img/bkground.png");
+  background-image: url("../img/bkground1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-h1{
-  font-family: 'Vollkorn', serif;
+h1, h2{
+  font-family: 'Special Elite', cursive;
 }
 
 p{
@@ -74,7 +75,7 @@ nav {
 #navlinks > li{
   display: inline;
   margin-right: 2em;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Special Elite', cursive;
   cursor: pointer;
 }
 
@@ -92,10 +93,11 @@ img.btn {
   margin: 20vh;
   padding: 5vh;
   background-color: #ffffffaf;
-  border: 1em solid #000066;
-  border-radius: 3em;
+  /* border: 1em solid #000066; */
+  /* border-radius: 3em; */
   color: #000066;
   text-align: justify;
+  box-shadow: 0px 0px 1em #000066;
 }
 
 #homebio{
@@ -116,7 +118,8 @@ img.btn {
   justify-content: space-around;
   background-color: #000066;
   margin: 0 5vw;
-  border-radius: 1em;
+  box-shadow: 0px 0px 1em #000066;
+  /* border-radius: 1em; */
 }
 
 .card-row {
@@ -124,7 +127,7 @@ img.btn {
   width: 25vw;
   background: #ffffff;
   color:#000066;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   padding: 5vh;
 }
 
@@ -143,7 +146,7 @@ img.btn {
 img#bio-image{
   height: 100%;
   width: auto;
-  border-radius: 1em;
+  /* border-radius: 1em; */
 }
 
 .bio .description{
@@ -161,6 +164,7 @@ header {
 #header {
   font-size: 10em;
   margin: 0;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 footer {
@@ -184,6 +188,7 @@ footer img.icon{
 
 footer h3{
   color: white;
+  font-family: 'Special Elite', cursive;
 }
 
 #contactPage{
@@ -197,8 +202,9 @@ footer h3{
 #contact-list{
   background-color: #ffffffa8;
   padding: 5vh;
-  border: 1vh solid #000066;
+  /* border: 1vh solid #000066; */
   height: 80%;
+  box-shadow: 0px 0px 1em #000066;
 }
 
 .contact{
