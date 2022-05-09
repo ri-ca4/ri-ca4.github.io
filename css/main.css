@@ -1,7 +1,7 @@
-
+/*_____Document_____*/
 
 :root {
-  font-size: 1em;
+  /* font-size: 1em; */
   line-height: 1.4;
   --dark: #000040;
   --white: #ffffff;
@@ -15,20 +15,18 @@
   scroll-behavior: smooth;
 }
 
-@media only screen and (min-width: 500px) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-
-
 body {
-  height: 100vh;
-  width: 100vw;
   background-image: url("../img/bkground1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
+
+
+
+
+/*_____General_____*/
 
 h1, h2{
   font-family: 'Special Elite', cursive;
@@ -38,12 +36,29 @@ p{
   font-family: 'Calibri';
 }
 
+
+
+
+/*_____Utility_____*/
+
 .flex {
   width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
+/*_____Layout_____*/
+
+/*Divs*/
 .full-screen{
   height: 100vh;
   display: flex;
@@ -58,6 +73,7 @@ p{
   justify-content: center;
 }
 
+/*Navigation*/
 nav {
   width: 100%;
   display: flex;
@@ -70,12 +86,12 @@ nav {
 
 #navlinks {
   list-style: none;
-  padding-top: 1em;
+  padding-top: 1vh;
 }
 
 #navlinks > li{
   display: inline;
-  margin-right: 2em;
+  margin-right: 2vw;
   font-family: 'Special Elite', cursive;
   cursor: pointer;
 }
@@ -84,27 +100,14 @@ img.btn {
   height: 30px;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
+/*Cards*/
 .card{
   margin: 20vh;
   padding: 5vh;
   background-color: var(--trans-white);
-  /* border: 1em solid var(--dark); */
-  /* border-radius: 3em; */
   color: var(--dark);
   text-align: justify;
   box-shadow: 0px 0px 1em var(--dark);
-}
-
-#homebio{
-  margin-top: 0;
-  width: 50vw;
-  align-self: center;
 }
 
 .card h1 {
@@ -112,6 +115,7 @@ img.btn {
   margin-top: 0;
 }
 
+/*Row*/
 .row {
   display: flex;
   flex-direction: row;
@@ -120,7 +124,6 @@ img.btn {
   background-color: var(--dark);
   margin: 0 5vw;
   box-shadow: 0px 0px 1em var(--dark);
-  /* border-radius: 1em; */
 }
 
 .card-row {
@@ -128,34 +131,10 @@ img.btn {
   width: 25vw;
   background: var(--white);
   color:var(--dark);
-  /* border-radius: 1em; */
   padding: 5vh;
 }
 
-.bio {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 60vh;
-}
-
-.bio .img{
-  height: 90%;
-}
-
-img#bio-image{
-  height: 100%;
-  width: auto;
-  /* border-radius: 1em; */
-}
-
-.bio .description{
-  height: 90%;
-  text-align: justify;
-  width: 75%;
-}
-
+/*Header*/
 header {
   color:var(--white);
   text-shadow: 0px 0px 1em var(--dark);
@@ -168,6 +147,7 @@ header {
   font-family: 'Fredericka the Great', cursive;
 }
 
+/*Footer*/
 footer {
   height:10vh;
   background-color: var(--dark);
@@ -192,6 +172,39 @@ footer h3{
   font-family: 'Special Elite', cursive;
 }
 
+/*_____Content Styles_____*/
+
+/*Bio*/
+.bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+#homebio{
+  margin-top: 0;
+  width: 50vw;
+  align-self: center;
+}
+
+.bio .img{
+  height: 90%;
+}
+
+img#bio-image{
+  height: 100%;
+  width: auto;
+}
+
+.bio .description{
+  height: 90%;
+  text-align: justify;
+  width: 75%;
+}
+
+/*Contact Page*/
 #contactPage{
   display: flex;
   align-items: center;
@@ -223,3 +236,37 @@ img.icon{
   width: auto;
   float:left;
 }
+
+/*_____Media Queries_____*/
+
+@media (max-width: 600px)  {
+  /* Style adjustments for mobile*/
+  nav {
+    justify-content: center;
+  }
+
+  .full-screen {
+    height: fit-content;
+  }
+
+  #header {
+    margin-top: 5vh;
+    font-size: 5em;
+    text-align: center;
+  }
+  .row {
+    flex-direction: column;
+    height:fit-content;
+  }
+  .card-row {
+    margin: 1em;
+    width: 90%;
+    height: fit-content;
+  }
+
+  #homebio{
+    width: 90%;
+    margin-top: 5vh;
+  }
+}
+/*media query for max-width 300*/
