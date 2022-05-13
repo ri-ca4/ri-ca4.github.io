@@ -247,7 +247,7 @@ img.icon{
 
   .full-screen {
     height: fit-content;
-    min-height: 33%
+    min-height: 33vh;
     }
 
   #header {
