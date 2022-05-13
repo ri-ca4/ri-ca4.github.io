@@ -247,7 +247,8 @@ img.icon{
 
   .full-screen {
     height: fit-content;
-  }
+    min-height: 33%
+    }
 
   #header {
     margin-top: 5vh;
