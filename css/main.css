@@ -45,6 +45,8 @@ p{
   width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sticky {
@@ -62,6 +64,7 @@ p{
 .full-screen{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -102,8 +105,9 @@ img.btn {
 
 /*Cards*/
 .card{
-  margin: 20vh;
+  margin: 5vh; 
   padding: 5vh;
+  width: 80%;
   background-color: var(--trans-white);
   color: var(--dark);
   text-align: justify;
@@ -113,6 +117,14 @@ img.btn {
 .card h1 {
   text-align: center;
   margin-top: 0;
+}
+
+.accent {
+  background: var(--white);
+  color:var(--dark);
+  border: 1vh solid var(--dark);
+  box-shadow: 0px 0px 1em var(--dark);
+  margin-bottom: 0;
 }
 
 /*Row*/
@@ -127,12 +139,14 @@ img.btn {
 }
 
 .card-row {
-  height: 75vh;
+  min-height: fit-content;
+  height: 90%;
   width: 25vw;
   background: var(--white);
   color:var(--dark);
   padding: 5vh;
 }
+
 
 /*Header*/
 header {
@@ -141,9 +155,13 @@ header {
   text-align: center;
 }
 
+header > h2 {
+  font-size: 1.5em;
+}
+
 #header {
-  font-size: 10em;
-  margin: 0;
+  font-size: 12em;
+  margin: 5vh;
   font-family: 'Fredericka the Great', cursive;
 }
 
@@ -174,6 +192,15 @@ footer h3{
 
 /*_____Content Styles_____*/
 
+#quote {
+  color: var(--white);
+  text-shadow: 0px 0px 1em var(--dark);
+  text-align: center;
+  font-size: 1.3em;
+  flex-direction: column;
+  padding: 5vw;
+}
+
 /*Bio*/
 .bio {
   display: flex;
@@ -184,9 +211,13 @@ footer h3{
 }
 
 #homebio{
+  margin-bottom: 5vh;
   margin-top: 0;
   width: 50vw;
+  height: fit-content;
   align-self: center;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .bio .img{
@@ -216,9 +247,8 @@ img#bio-image{
 #contact-list{
   background-color: var(--trans-white);
   padding: 5vh;
-  /* border: 1vh solid var(--dark); */
-  height: 80%;
   box-shadow: 0px 0px 1em var(--dark);
+  height: fit-content;
 }
 
 .contact{
@@ -228,7 +258,7 @@ img#bio-image{
   /* justify-content: center; */
 }
 
-.contact > h4{
+.contact > h2{
   color:var(--dark);
 }
 
@@ -239,7 +269,100 @@ img.icon{
 
 /*_____Media Queries_____*/
 
-@media (max-width: 600px)  {
+/*one for height*/
+
+@media only screen and (max-width: 992px) {
+  /* nav {
+    justify-content: center;
+  } */
+
+  /* .full-screen {
+    height: fit-content;
+    min-height: 50vh;
+    flex-direction: column;
+    padding: 5vw;
+  } */
+
+  #header {
+    margin-top: 5vh;
+    font-size: 10em;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  #homebio{
+    width: 90%;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #quote {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+
+  .full-screen {
+    height: fit-content;
+    min-height: 50vh;
+    flex-direction: column;
+    padding: 5vw;
+  }
+
+  #header {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  #homebio{
+    width: 90%;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #quote {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+
+  .full-screen {
+    height: fit-content;
+    min-height: 50vh;
+    flex-direction: column;
+    padding: 5vw;
+  }
+
+  #header {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  #homebio{
+    width: 90%;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #quote {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
   /* Style adjustments for mobile*/
   nav {
     justify-content: center;
@@ -247,26 +370,26 @@ img.icon{
 
   .full-screen {
     height: fit-content;
+    min-height: 50vh;
+    flex-direction: column;
+    padding: 5vw;
   }
 
   #header {
-    margin-top: 5vh;
     font-size: 5em;
     text-align: center;
-  }
-  .row {
-    flex-direction: column;
-    height:fit-content;
-  }
-  .card-row {
-    margin: 1em;
-    width: 90%;
-    height: fit-content;
+    margin-top: 5vh;
   }
 
   #homebio{
     width: 90%;
     margin-top: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #quote {
+    font-size: 1.5em;
   }
 }
 /*media query for max-width 300*/
