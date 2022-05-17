@@ -370,10 +370,15 @@ img.icon{
 
   .full-screen {
     height: fit-content;
+<<<<<<< HEAD
     min-height: 50vh;
     flex-direction: column;
     padding: 5vw;
   }
+=======
+    min-height: 33vh;
+    }
+>>>>>>> 860aa5f68b081ea48f712f4edd37c044fa2e3d72
 
   #header {
     font-size: 5em;
