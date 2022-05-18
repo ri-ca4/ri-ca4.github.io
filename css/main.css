@@ -190,7 +190,7 @@ footer h3{
 
 /*_____Content Styles_____*/
 
-#quote {
+.quote {
   color: var(--white);
   text-shadow: 0px 0px 1em var(--dark);
   text-align: center;
@@ -205,7 +205,7 @@ footer h3{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 40vh;
+  height: 50vh;
 }
 
 #homebio{
@@ -293,7 +293,7 @@ img.icon{
     text-align: center;
   }
 
-  #quote {
+  .quote {
     font-size: 1em;
   }
 
@@ -381,7 +381,7 @@ img.icon{
     margin-left: 10vw;
   }
 
-  #quote {
+  .quote {
     font-size: .7em;
   }
 
