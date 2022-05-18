@@ -2,7 +2,7 @@
 
 :root {
   /* font-size: 1em; */
-  line-height: 1.4;
+  /* line-height: 1.4; */
   --dark: #000040;
   --white: #ffffff;
   --trans-white: #ffffffaf;
@@ -42,7 +42,6 @@ p{
 /*_____Utility_____*/
 
 .flex {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +51,6 @@ p{
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
 
@@ -207,7 +205,7 @@ footer h3{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 60vh;
+  height: 40vh;
 }
 
 #homebio{
@@ -269,40 +267,7 @@ img.icon{
 
 /*_____Media Queries_____*/
 
-/*one for height*/
-
 @media only screen and (max-width: 992px) {
-  /* nav {
-    justify-content: center;
-  } */
-
-  /* .full-screen {
-    height: fit-content;
-    min-height: 50vh;
-    flex-direction: column;
-    padding: 5vw;
-  } */
-
-  #header {
-    margin-top: 5vh;
-    font-size: 10em;
-    text-align: center;
-    margin-top: 10vh;
-  }
-
-  #homebio{
-    width: 90%;
-    margin-top: 5vh;
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  #quote {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   nav {
     justify-content: center;
   }
@@ -315,22 +280,61 @@ img.icon{
   }
 
   #header {
-    font-size: 5em;
+    margin-top: 5vh;
+    font-size: 8em;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
   }
 
   #homebio{
     width: 90%;
     margin-top: 5vh;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
   }
 
   #quote {
-    font-size: 1.5em;
+    font-size: 1em;
+  }
+
+  .bio {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-between;
+  }  
+
+  .bio .img{
+    height: 90%;
+  }
+  
+  img#bio-image{
+    height: 100%;
+    width: auto;
+  }
+
+  .card{
+    width: 90%;
+  }
+
+  .row {
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 60%;
+  }
+
+  .card-row {
+    height: fit-content;
+    width: auto;
+    padding: 5vh;
+    margin: 5vh, 0;
+    text-align: center;
   }
 }
+
 
 @media only screen and (max-width: 600px) {
   nav {
@@ -339,9 +343,19 @@ img.icon{
 
   .full-screen {
     height: fit-content;
-    min-height: 50vh;
+    min-height: 20vh;
     flex-direction: column;
     padding: 5vw;
+  }
+
+  .half-screen {
+    height: fit-content;
+    margin: none,
+
+  }
+
+  header {
+    margin-bottom: 5vh;
   }
 
   #header {
@@ -351,50 +365,74 @@ img.icon{
   }
 
   #homebio{
-    width: 90%;
-    margin-top: 5vh;
-    font-size: 1.5em;
+    width: 100%;
+    font-size: 1.1em;
     text-align: center;
   }
 
+  .card{
+    text-align: center;
+    padding: 1vw;
+    width: 100%;
+  }
+
+  .card > ul {
+    text-align: justify;
+    margin-left: 10vw;
+  }
+
   #quote {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 600px)  {
-  /* Style adjustments for mobile*/
-  nav {
-    justify-content: center;
+    font-size: .7em;
   }
 
-  .full-screen {
-    height: fit-content;
-<<<<<<< HEAD
-    min-height: 50vh;
+  .bio {
+    display: flex;
     flex-direction: column;
-    padding: 5vw;
-  }
-=======
-    min-height: 33vh;
-    }
->>>>>>> 860aa5f68b081ea48f712f4edd37c044fa2e3d72
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+  }  
 
-  #header {
-    font-size: 5em;
+  .bio .img{
+    width: 100%;
+
+  }
+  
+  img#bio-image{
+    width: 100%;
+    height: auto;
+  }
+  
+  .bio .description{
+    height: fit-content;
+    text-align: justify;
+  }
+
+  .row {
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+  }
+
+  .card-row {
+    height: fit-content;
+    width: auto;
+    padding: 5vh;
+    margin: 5vh, 0;
     text-align: center;
-    margin-top: 5vh;
   }
 
-  #homebio{
-    width: 90%;
-    margin-top: 5vh;
-    font-size: 1.5em;
+  #contact-list{
+    background-color: var(--trans-white);
+    padding: 5vh;
+    box-shadow: 0px 0px 1em var(--dark);
+    height: fit-content;
+    width: 90vw;
+    font-size: .7em;
+  }
+  
+  footer{
     text-align: center;
-  }
-
-  #quote {
-    font-size: 1.5em;
   }
 }
-/*media query for max-width 300*/
