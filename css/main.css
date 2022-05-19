@@ -287,7 +287,13 @@ img.icon{
 /*_____SHOWCASE______*/
 
 .showcase{
-  
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--trans-white);
+  padding: 5vh;
+  box-shadow: 0px 0px 1em var(--dark);
+  height: 90vh;
 }
 
 
