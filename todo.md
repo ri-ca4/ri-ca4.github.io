@@ -6,13 +6,9 @@ Tasks needed to complete and/or update portfolio
 
 Style and Structure
 
-- [ ] media queries
+
 - [ ] 404 page
-- [ ] refine overall style of website
-    - [x] transparency in card backgrounds
-    - [x] border thickness and radius
-    - [ ] height and width of divs for better flow
-    - [ ] text style and layout with content added
+
 
 
 ## JS
@@ -21,12 +17,6 @@ Style and Structure
 
 ## CONTENT
 
-- [ ] About Me page
-    - [ ] blurb
-    - [ ] bio
-    - [ ] why web dev
-    - [ ] values
-    - [x] goals overview
 
 - [ ] Projects page
     - [ ] projects overview
@@ -35,8 +25,7 @@ Style and Structure
 
 ## DESIGN
 
-- [ ] favicon.ico
-- [ ] some sort of logo to balance out nav bar
+
 
 ## ORGANIZATION
 
@@ -45,7 +34,7 @@ Style and Structure
 
 ## PROJECTS
 
-- [x] choose which projects to showcase
+
 - [ ] polish projects
 - [ ] add project files 
 - [ ] link to projects and provide github information
@@ -66,3 +55,24 @@ Style and Structure
 
 - [x] design buttons for navbar to match style of icons
 - [x] design header to match style of icons and navbar
+
+- [x] favicon.ico
+- [-] some sort of logo to balance out nav bar
+
+- [x] choose which projects to showcase
+
+
+- [x] About Me page
+    - [x] blurb
+    - [x] bio
+    - [x] why web dev
+    - [x] values
+    - [x] goals overview
+
+    - [x] refine overall style of website
+    - [x] transparency in card backgrounds
+    - [x] border thickness and radius
+    - [x] height and width of divs for better flow
+    - [x] text style and layout with content added
+
+    - [x] media queries

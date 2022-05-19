@@ -1,0 +1,197 @@
+
+
+
+/*4Square Animation*/
+
+#box {
+    height: 32vw;
+    width: 32vw;
+    background-color: cadetblue;
+    display: flex;
+    position: relative;
+    border: 1px solid black;
+    margin: 10%;
+}
+
+.textBox {
+    position: absolute;
+    height: 8vw;
+    width: 12vw;
+    left: 10vw;
+    top: 12vw;
+    background-color: black;
+}
+
+.text {
+    color:ghostwhite;
+    font-size: 2vw;
+    text-align:center;
+    line-height: 4vw;
+}
+
+.text::before {
+    content: "";
+    animation: infinite;
+    animation-name: textPrompt;
+    animation-duration: 16s;
+}
+
+@keyframes textPrompt {
+    0% {content: "Breathe In";}
+    12% {content: "Breathe In";}
+    24% {content: "";}
+    25% {content: "Hold";}
+    37% {content: "Hold";}
+    49% {content: "";}
+    50% {content: "Breathe Out";}
+    63% {content: "Breathe Out";}
+    74% {content: "";}
+    75% {content: "Hold";}
+    87% {content: "Hold";}
+    99% {content: "";}
+    100% {content: "Breathe In";}
+}
+
+#animate {
+    height: 5vw;
+    width: 5vw;
+    border: 1px solid #000000;
+    position: relative;
+    border-radius: 5vw;
+    animation-name: four;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes four {
+    0% {background-color: #d9a18ccb; left:.5vw; top:.5vw;}
+    24% {background-color: #d9a18ccb}
+    25% {background-color: #a5b1bacb; left: 26vw; top: .5vw;}
+    49% {background-color: #a5b1bacb}
+    50% {background-color: #44608acb; left: 26vw; top: 26vw;}
+    74% {background-color: #44608acb}
+    75% {background-color: #a5b1bacb; left:.5vw; top: 26vw;}
+    99% {background-color: #a5b1bacb}
+    100% {background-color: #d9a18ccb; left:.5vw; top:.5vw;}
+}
+
+
+#count {
+    color:#fffaf0a4;
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+    height: 5vw;
+    width: 5vw; 
+    z-index: 1;
+    
+    animation-name: number;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes number {
+    0% {left:.5vw; top:.5vw;}
+    25% {left: 26vw; top: .5vw;}
+    50% {left: 26vw; top: 26vw;}
+    75% {left:.5vw; top: 26vw;}
+    100% {left:.5vw; top:.5vw;}
+}
+
+.counter::before {
+    content: "";
+    animation: infinite;
+    animation-timing-function: step-end;
+    animation-name: counter;
+    animation-duration: 16s;
+}
+
+@keyframes counter {
+    0% {content: "1";}
+    6.25% {content: "2"}
+    12.5% {content: "3"}
+    18.75% {content: "4"}
+    25% {content: "1";}
+    31.25% {content: "2"}
+    37.5% {content: "3"}
+    43.75% {content: "4"}
+    50% {content: "1";}
+    56.25% {content: "2"}
+    62.5% {content: "3"}
+    68.75% {content: "4"}
+    75% {content: "1";}
+    81.25% {content: "2"}
+    87.5% {content: "3"}
+    93.75% {content: "4"}
+    100% {content: "1";}
+}
+
+
+/*Bouncing Ball Animation*/
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: chocolate;
+    background-image: url(../img/ball.png);
+    background-size: cover;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes bounce {
+    0%     { transform: translate3d(0, 10, 0);}
+    10%    { transform: translate3d(0, 10, 0) rotate(-180deg);}   
+    15%    { transform: translate3d(0, 15px, 0) rotate(-90deg);}
+    25%    { transform: translate3d(0, 20px, 0) rotate(-120deg);}
+    45%    { transform: translate3d(0, 175px, 0) rotate(-180deg);}
+    50%    { transform: translate3d(0, 250px, 0) scale(1, .9) rotate(-220deg);}
+    55%    { transform: translate3d(0, 250px, 0) scale(1.2, .8) rotate(-180deg);}
+    65%    { transform: translate3d(0, 225px, 0) scale(1.1, .8) rotate(-180deg);}
+    100%   { transform: translate3d(0, 200, 0) rotate(-90deg);}
+
+}
+
+.shadow {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 175px;
+    background-color: darkslategrey;
+    z-index: -1;
+    animation-name: shadow;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+
+@keyframes shadow {
+    0%      {transform: scale(.5, .25);}
+    10%     {transform: scale(.5, .25);}
+    25%     {transform: scale(.5, .25);}
+    50%     {transform: scale(.5, .25);}
+    45%     {transform: scale(.75, .25);}
+    50%     {transform: scale(1, .25);}
+    55%     {transform: scale(1.2, .5);}
+    65%     {transform: scale(1.1, .5);}
+    100%    {transform: scale(.5, .25);}
+
+
+}
+
