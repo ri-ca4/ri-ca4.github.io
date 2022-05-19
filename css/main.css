@@ -278,6 +278,27 @@ img.icon{
   float:left;
 }
 
+/*Project page*/
+
+.project-list{
+  list-style: none;
+}
+
+/*_____SHOWCASE______*/
+
+.showcase{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--trans-white);
+  padding: 5vh;
+  box-shadow: 0px 0px 1em var(--dark);
+  height: 90vh;
+}
+
+
+
+
 /*_____Media Queries_____*/
 
 @media only screen and (max-width: 992px) {
@@ -357,7 +378,7 @@ img.icon{
 
   .full-screen {
     height: fit-content;
-    min-height: 20vh;
+    min-height: 30vh;
     flex-direction: column;
     padding: 5vw;
   }
@@ -424,7 +445,7 @@ img.icon{
 
   .card-row {
     height: fit-content;
-    width: auto;
+    width: 90%;
     padding: 5vh;
     margin: 5vh, 0;
     text-align: center;
