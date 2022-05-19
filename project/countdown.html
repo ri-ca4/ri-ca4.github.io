@@ -7,14 +7,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Clock</title>
+        <title>Countdown Timer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="..\css\main.css"> -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="..\css\main.css">
-        <link rel="stylesheet" href="..\css\clock.css">
+        <link rel="stylesheet" href="..\css\countdown.css">
         
     </head>
     <body>
@@ -22,34 +23,37 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        
-
-
-        <nav class="sticky">
+        <!-- <nav class="sticky">
             <ul id="navlinks">
                 <li><a href="..\index.html"><img class="btn" src="..\img\buttons\home-btn.gif" alt="Home"></a></li>
                 <li><a href="..\aboutme.html"><img class="btn" src="..\img\buttons\aboutme-btn.gif" alt="About Me"></a></li>
                 <li><a href="..\projects.html"><img class="btn" src="..\img\buttons\projects-btn.gif" alt="Projects"></a></li>
                 <li><a href="..\contact.html"><img class="btn" src="..\img\buttons\contact-btn.gif" alt="Contact"></a></li>
             </ul>
-            </nav>
-            <div class="showcase">
-                <div id="clockFace">
-                    <div class="clock num"><span id="hrs"></span></div>
-                    <div class="clock divide blink"><span id="divide">:</span></div>
-                    <div class="clock num"><span id="mins"></span></div>
-                    <div class="clock amPM"><span id="amPM"></span></div>
-                </div>
+        </nav> -->
+        <div class="showcase">
+            <div id="timer">
+                <h1>
+                    <span id="days" class="time"></span> 
+                    <span id="hours" class="time"></span> 
+                    <span id="minutes" class="time"></span> 
+                    <span id="seconds" class="time"></span>
+                </h1>
             </div>
+            <div id="banner">
+                <h1 id="title">My Timer</h1>
+                <span id="consolePrompt"></span>
+            </div>
+            <h1><a href="..\projects.html">BACK</a></h1>
         </div>
-        <footer>
-            <ul id="icon-links">
-                <li><a href="mailto:riley.de12@gmail.com"><img id="email" class="icon" src="..\img\icons\email_white.gif" alt="email"></li>
-                <li><a href="https://github.com/ri-ca4"><img id="github" class="icon" src="..\img\icons\github_white.gif" alt="github"></li>
-                <li><a href=""><img id="linkedIn" class="icon" src="..\img\icons\linkedin_white.gif" alt="linked in"></a></li>
-                <li><a href="https://twitter.com/rileyde12"><img id="twitter" class="icon" src="..\img\icons\twitter_white.gif" alt="twitter"></a></a></li>
-            </ul>
-            </footer>
-        <script src="../js/clock.js" async defer></script>
+            <!-- <footer>
+
+                <a href="mailto:riley.de12@gmail.com"><img id="email" class="icon" src="..\img\icons\email.gif" alt="email"></a>
+                <a href="https://github.com/ri-ca4"><img id="github" class="icon" src="..\img\icons\github.gif" alt="github"></a>
+                <a href=""><img id="linkedIn" class="icon" src="..\img\icons\linkedin.gif" alt="linked in"></a>
+                <a href="https://twitter.com/rileyde12"><img id="twitter" class="icon" src="..\img\icons\twitter.gif" alt="twitter"></a>
+
+            </footer> -->
+        <script src="../js/countdown.js" async defer></script>
     </body>
 </html>

@@ -13,6 +13,7 @@
     width: 60vh;
     min-width: 300px;
     margin: auto;
+    color: var(--dark);
 }
 
 .clock {
