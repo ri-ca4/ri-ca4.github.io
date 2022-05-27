@@ -4,8 +4,8 @@
 /*4Square Animation*/
 
 #box {
-    height: 50vw;
-    width: 50vw;
+    height: 25vw;
+    width: 25vw;
     background-color: #000040;
     display: flex;
     position: relative;
@@ -27,7 +27,7 @@
 
 .text {
     color: #000040;
-    font-size: 2em;
+    font-size: 2.5vw;
     line-height: 4vw;
 }
 
@@ -68,11 +68,11 @@
 @keyframes four {
     0% {background-color: #5877d4; left:0vw; top:0vw;}
     24% {background-color: #5877d4}
-    25% {background-color: #a5b1ba; left: 37.25vw; top: 0vw;}
+    25% {background-color: #a5b1ba; left: 75%; top: 0vw;}
     49% {background-color: #a5b1ba}
-    50% {background-color: #61448a; left: 37.25vw; top: 37.25vw;}
+    50% {background-color: #61448a; left: 75%; top: 75%;}
     74% {background-color: #61448a}
-    75% {background-color: #a5b1ba; left:0vw; top: 37.25vw;}
+    75% {background-color: #a5b1ba; left:0vw; top: 75%;}
     99% {background-color: #a5b1ba}
     100% {background-color: #5877d4; left:0vw; top:0vw;}
 }
@@ -82,7 +82,7 @@
     color:#fffaf0;
     position: absolute;
     text-align: center;
-    font-size: 4.5em;
+    font-size: 5vw;
     height: 25%;
     width: 25%; 
     z-index: 1;
@@ -95,9 +95,9 @@
 
 @keyframes number {
     0% {left:0vw; top:0vw;}
-    25% {left: 37.25vw; top: 0vw;}
-    50% {left: 37.25vw; top: 37.25vw;}
-    75% {left:0vw; top: 37.25vw;}
+    25% {left: 75%; top: 0vw;}
+    50% {left: 75%; top: 75%;}
+    75% {left:0vw; top: 75%;}
     100% {left:0vw; top:0vw;}
 }
 
@@ -129,7 +129,18 @@
     100% {content: "1";}
 }
 
-
+@media screen and (max-width: 600px) {
+    #box{
+        height: 50vw;
+        width:50vw;
+    }
+    #count{
+        font-size: 10vw;
+    }
+    .text{
+        font-size: 5vw;
+    }
+}
 /*Bouncing Ball Animation*/
 
 
