@@ -6,24 +6,27 @@
 #box {
     height: 32vw;
     width: 32vw;
-    background-color: cadetblue;
+    background-color: #000040;
     display: flex;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid #000000;
     margin: 10%;
 }
 
 .textBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     height: 8vw;
     width: 12vw;
     left: 10vw;
     top: 12vw;
-    background-color: black;
+    background-color: #ffffffaf;
 }
 
 .text {
-    color:ghostwhite;
+    color: #000040;
     font-size: 2vw;
     text-align:center;
     line-height: 4vw;
@@ -55,7 +58,6 @@
 #animate {
     height: 5vw;
     width: 5vw;
-    border: 1px solid #000000;
     position: relative;
     border-radius: 5vw;
     animation-name: four;
@@ -65,15 +67,15 @@
 }
 
 @keyframes four {
-    0% {background-color: #d9a18ccb; left:.5vw; top:.5vw;}
-    24% {background-color: #d9a18ccb}
+    0% {background-color: #5877d4cb; left:.5vw; top:.5vw;}
+    24% {background-color: #5877d4cb}
     25% {background-color: #a5b1bacb; left: 26vw; top: .5vw;}
     49% {background-color: #a5b1bacb}
-    50% {background-color: #44608acb; left: 26vw; top: 26vw;}
-    74% {background-color: #44608acb}
+    50% {background-color: #61448acb; left: 26vw; top: 26vw;}
+    74% {background-color: #61448acb}
     75% {background-color: #a5b1bacb; left:.5vw; top: 26vw;}
     99% {background-color: #a5b1bacb}
-    100% {background-color: #d9a18ccb; left:.5vw; top:.5vw;}
+    100% {background-color: #5877d4cb; left:.5vw; top:.5vw;}
 }
 
 
