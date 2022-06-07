@@ -142,6 +142,7 @@ img.btn {
 }
 
 .card-row {
+  text-align: center;
   min-height: fit-content;
   height: 90%;
   width: 25vw;
@@ -411,7 +412,7 @@ img.icon{
   }
 
   .card > ul {
-    text-align: justify;
+    text-align: center;
     margin-left: 10vw;
   }
 
