@@ -1,6 +1,6 @@
 # Name
 
-    John Doe
+    John/Jane Doe
 
 # Contact Info
 
@@ -9,7 +9,7 @@
 
 # Introduction
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia omnis, officia voluptatum cupiditate atque sequi laboriosam quibusdam eum ex odio, illo aspernatur perferendis vel molestias impedit, nesciunt unde saepe quam dolorem. Nisi deleniti repellat laudantium sequi sed perspiciatis, voluptatem distinctio molestias non aspernatur maxime culpa consectetur a dolores reprehenderit?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia omnis, officia voluptatum cupiditate atque sequi laboriosam quibusdam eum ex odio, illo aspernatur perferendis vel molestias impedit, nesciunt unde saepe quam dolorem.
 
 
 # Experience
