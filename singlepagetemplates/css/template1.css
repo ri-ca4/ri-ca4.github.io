@@ -9,6 +9,10 @@ body {
     background-color: black;
 }
 
+hr{
+    width: 100%;
+}
+
 #container{
     display: flex;
     flex-direction: column;
@@ -56,6 +60,7 @@ body {
 
 .content{
     font-size: 1.5em;
+    width: 100%;
 }
 
 #intro {
@@ -63,7 +68,23 @@ body {
     font-size: 1.5em;
 }
 
+#contact {
+    list-style: none;
+    font-size: 1.5em;
+}
 
+a {
+    color:#f2f2f2;
+}
+
+a.hover{
+    color:#bbb
+}
+
+footer {
+    margin: 5vh;
+    width: 100vw;
+}
 /*SLIDESHOW*/
 
 .slide-container {
@@ -133,5 +154,5 @@ body {
 }
 
 .dots {
-    text-align:center
+    text-align: center;
 }
