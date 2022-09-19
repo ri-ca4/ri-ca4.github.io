@@ -11,10 +11,11 @@ body
 .container{
     position: relative;
     min-height: 100vh;
+    width: 100vw;
 }
 
 .wrapper{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 10vh;
@@ -83,6 +84,7 @@ footer{
     align-items: center;
     height: 10vh;
     font-size: 1.3em;
+    background-color: white;
 }
 
 footer a{
@@ -208,9 +210,50 @@ nav#sticky-nav{
     justify-content:space-between;
 }
 
+/*     ABOUT PAGE      */
 
+#about-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+
+#headshot{/*--------------change when img is inserted-----------------*/
+    height: 100vw;  
+    width: 100%;
+}
+
+#about-scroll{
+    text-align: center;
+    padding: 5vh;
+}
+
+.scroll-section{
+    padding: 5vh;
+}
+
+#about-scroll h1{
+    font-size: 2em;
+}
+
+.scroll-section h2{
+    font-size: 1.7em;
+}
+
+.scroll-section h3{
+    font-size: 1.5em;
+}
+
+.scroll-section p{
+    margin-bottom: 10vh
+}
 
 @media only screen and (min-width: 600px) {div{background-color: red;}
+/*HOME PAGE*/
     #about-prev{
         flex-direction: row;
         align-items: center;
@@ -225,25 +268,51 @@ nav#sticky-nav{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {div{background-color: blue;}
+/*HOME PAGE*/
+    #projects-prev{
+        flex-direction: row-reverse;
+    }
 
-#projects-prev{
-    flex-direction: row-reverse;
-}
+    #projects-prev-text{
+        padding: 5vw;
+        margin: 0;
+    }
 
-#projects-prev-text{
-    padding: 5vw;
-    margin: 0;
-}
+    #projects-prev-quote{
+        width: 60%
+    }
 
-#projects-prev-quote{
-    width: 60%
-}
+/*ABOUT PAGE*/
+    #headshot{/*--------------change when img is inserted-----------------*/
+        height: 50vw;  
+        width: 50vw;
+    }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {div{background-color: green;}
+/*ABOUT PAGE*/
+    #about-content{
+        display: inline-flex;
+        flex-direction: row;
+        height: fit-content;
+    }
 
+    #headshot{
+        display: inline-block; 
+        width: 50%;
+        height: 78.5vh;
+    }
+
+    #about-scroll{
+        display: inline-block;
+        height: 78.5vh;
+        width: 50%;
+        overflow-y: scroll;
+        margin: 0;
+        padding: 0;
+    }
 
 }
 
