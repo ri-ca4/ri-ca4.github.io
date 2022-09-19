@@ -20,11 +20,27 @@ body
     padding-bottom: 10vh;
 }
 
+h1{
+    font-size: 1.5em;
+}
 
+p{
+    font-size: 1.2em;
+}
+
+a{
+    font-size: 1.2em;
+}
+
+div{
+    border: 1px solid black
+}
 
 /*     NAVBAR     */
 
 nav{
+    position: fixed;
+    top:0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -32,10 +48,12 @@ nav{
     align-items: center;
     height: 10vh;
     font-size: 1.3em;
+    background-color: white;
 }
 
 nav a{
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 nav a:focus,
@@ -68,8 +86,8 @@ footer{
 }
 
 footer a{
-    color: white;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 footer a:focus,
@@ -83,4 +101,95 @@ footer ul{
 
 footer ul li{
     display: inline-block;
+}
+
+
+
+/*     INDEX     */
+
+nav#sticky-nav{
+    position: sticky;
+    top: -1px;
+}
+
+/*     INTRO SECTION     */
+
+#home-intro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#intro-name{
+    font-size: 2em;
+}
+
+#intro-description{
+    height: 20vh;
+    width: 100%;
+    border: 1px solid black;
+    /*this is temporary*/
+}
+
+.scroll-indicator{
+    height: 15vh;
+    width: 100%;
+    border: 1px solid black;
+    /*this is temporary*/
+}
+
+/*     CONTENT SECTIONS     */
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#blurb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin: 10vw;
+    text-align: center;
+}
+
+#home-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home-skills-text{
+    padding: 5vw;
+}
+
+#home-skills-list{
+    list-style: none;
+    margin: 0 5vw 5vw 5vw;
+}
+
+#home-skills-list li{
+    font-size: 1.2em;
+}
+
+#about-prev,
+#projects-prev{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh;
 }
