@@ -300,7 +300,7 @@ nav#sticky-nav{
 
 
 
-@media only screen and (min-width: 600px) {div{background-color: red;}
+@media only screen and (min-width: 600px) {
 /*HOME PAGE*/
     #about-prev{
         flex-direction: row;
@@ -327,7 +327,7 @@ nav#sticky-nav{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {div{background-color: blue;}
+@media only screen and (min-width: 768px) {
 /*HOME PAGE*/
     #projects-prev{
         flex-direction: row-reverse;
@@ -345,7 +345,7 @@ nav#sticky-nav{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {div{background-color: green;}
+@media only screen and (min-width: 992px) {
 /*ABOUT PAGE*/
     #about-content{
         display: inline-flex;
@@ -407,10 +407,5 @@ nav#sticky-nav{
     #node-example{
         flex-direction: row-reverse;
     }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {div{background-color: yellow;}
 
 }
