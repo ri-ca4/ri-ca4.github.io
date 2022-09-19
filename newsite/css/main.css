@@ -252,6 +252,37 @@ nav#sticky-nav{
     margin-bottom: 10vh
 }
 
+
+/*     PROJECT PAGE     */
+
+
+.project-section,
+.project-section-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+}
+
+.project-showcase{/*--------------change when vid is inserted-----------------*/
+    height: 75vw;
+    width: 100%;
+}
+
+.project-links{
+    padding: 5vw;
+}
+
+.project-description{
+    padding: 10vw;
+}
+
+.warn{
+    font-size: .8em;
+}
+
 @media only screen and (min-width: 600px) {div{background-color: red;}
 /*HOME PAGE*/
     #about-prev{
@@ -263,6 +294,18 @@ nav#sticky-nav{
     #about-prev-image{/*--------------change when img is inserted-----------------*/
         min-height: 30vw;  
         min-width: 30vw;
+    }
+
+/*ABOUT PAGE*/
+    #headshot{/*--------------change when img is inserted-----------------*/
+        height: 50vw;  
+        width: 50%;
+    }
+
+/*PROJECTS PAGE*/
+    .project-showcase{/*--------------change when vid is inserted-----------------*/
+        height: 75vh;
+        width: 100%;
     }
 }
 
@@ -280,12 +323,6 @@ nav#sticky-nav{
 
     #projects-prev-quote{
         width: 60%
-    }
-
-/*ABOUT PAGE*/
-    #headshot{/*--------------change when img is inserted-----------------*/
-        height: 50vw;  
-        width: 50vw;
     }
 
 }
@@ -312,6 +349,46 @@ nav#sticky-nav{
         overflow-y: scroll;
         margin: 0;
         padding: 0;
+    }
+
+/*PROJECTS PAGE*/
+    .project-section{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .project-section-sm{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .project-section-sm > .project-description,
+    .project-section-sm > .project-links{
+        width: 100%;
+    }
+
+    .project-showcase{/*--------------change when vid is inserted-----------------*/
+        height: 75vh;
+        width: 60vw;
+    }
+
+    .group{
+        width: 40vw;
+        height: fit-content;
+        max-height: 75vh;
+    }
+
+    .project-description,
+    .project-links{
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+
+    #node-example{
+        flex-direction: row-reverse;
     }
 
 }
