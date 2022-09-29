@@ -175,6 +175,7 @@ nav#sticky-nav{
     height: 20vh;
     margin: 10vw;
     text-align: center;
+    background-color: var(--transPurple);
 }
 
 #home-skills{
@@ -187,11 +188,15 @@ nav#sticky-nav{
 
 #home-skills-text{
     padding: 5vw;
+    border: 3px solid var(--purple);
+    margin: 5vw;
 }
 
 #home-skills-list{
     list-style: none;
     margin:5vw;
+    background-color: var(--transPurple);
+    width: 100%;
 }
 
 #home-skills-list li{
@@ -203,7 +208,9 @@ nav#sticky-nav{
     height: 45vh;
     display: flex;
     text-align: center;
-    padding: 0 5vw;
+    padding: 5vw;
+    border: 3px solid var(--purple);
+    margin: 5vw;
 }
 
 #about-prev a,
@@ -232,6 +239,7 @@ nav#sticky-nav{
 #projects-prev-quote{
     padding: 5vw;
     margin: 3vw;
+    background-color: var(--transPurple);
 }
 
 /*     ABOUT PAGE      */
