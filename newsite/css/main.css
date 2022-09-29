@@ -1,4 +1,10 @@
-:root
+:root{
+    --purple: #7a00d0;
+    --darkPurple: #450176;
+    --transPurple: #7900d072;
+    --black: #000000;
+    --white: #ffffff;
+}
 
 *{
     margin: 0;
@@ -6,7 +12,10 @@
     box-sizing: border-box;
 }
 
-body
+body{
+    background-color: var(--black);
+    color: var(--white)
+}
 
 .container{
     position: relative;
@@ -15,9 +24,10 @@ body
 }
 
 .wrapper{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding-bottom: 10vh;
 }
 
@@ -31,10 +41,7 @@ p{
 
 a{
     font-size: 1.2em;
-}
-
-div{
-    border: 1px solid black
+    color: var(--white)
 }
 
 /*     NAVBAR     */
@@ -48,13 +55,13 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    font-size: 1.3em;
-    background-color: white;
+    background-color: var(--darkPurple);
 }
 
 nav a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: var(--white)
 }
 
 nav a:focus,
@@ -68,6 +75,7 @@ nav ul{
 
 nav ul li{
     display: inline-block;
+    margin: 0 3vw;
 }
 
 
@@ -83,13 +91,13 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    font-size: 1.3em;
-    background-color: white;
+    background-color: var(--darkPurple);
 }
 
 footer a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: var(--white)
 }
 
 footer a:focus,
@@ -103,6 +111,7 @@ footer ul{
 
 footer ul li{
     display: inline-block;
+    margin: 0 3vw;
 }
 
 
@@ -111,7 +120,8 @@ footer ul li{
 
 nav#sticky-nav{
     position: sticky;
-    top: -1px;
+    top: 0;
+    height: 10vh;
 }
 
 /*     INTRO SECTION     */
@@ -123,31 +133,34 @@ nav#sticky-nav{
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    background-image: url(../assets/intro.png);
+    background-position: 50% 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--black);
 }
 
 #intro-name{
     font-size: 2em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 3em;
 }
 
 #intro-description{
     height: 20vh;
-    width: 100%;
-    border: 1px solid black;
-    /*this is temporary*/
 }
 
 .scroll-indicator{
     height: 15vh;
-    width: 100%;
-    border: 1px solid black;
-    /*this is temporary*/
 }
 
 /*     CONTENT SECTIONS     */
 
 .home-section{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,7 +191,7 @@ nav#sticky-nav{
 
 #home-skills-list{
     list-style: none;
-    margin: 0 5vw 5vw 5vw;
+    margin:5vw;
 }
 
 #home-skills-list li{
@@ -190,13 +203,19 @@ nav#sticky-nav{
     height: 45vh;
     display: flex;
     text-align: center;
-    padding: 5vh;
+    padding: 0 5vw;
+}
+
+#about-prev a,
+#projects-prev a{
+    font-size: 1.5em;
 }
 
 #about-prev{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5vh;
 }
 
 #about-prev-image{
@@ -208,6 +227,11 @@ nav#sticky-nav{
     flex-direction: column;
     align-items:center;
     justify-content:space-between;
+}
+
+#projects-prev-quote{
+    padding: 5vw;
+    margin: 3vw;
 }
 
 /*     ABOUT PAGE      */
@@ -262,7 +286,7 @@ nav#sticky-nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
@@ -292,7 +316,7 @@ nav#sticky-nav{
     align-items: center;
     justify-content: center;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     margin-top: 10vh;
 }
 
@@ -302,6 +326,10 @@ nav#sticky-nav{
 
 @media only screen and (min-width: 600px) {
 /*HOME PAGE*/
+    #home-intro{
+        height: 100vh;
+    }
+
     #about-prev{
         flex-direction: row;
         align-items: center;
@@ -329,6 +357,11 @@ nav#sticky-nav{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 /*HOME PAGE*/
+
+    #intro-name{
+        margin: 0;
+    }
+
     #projects-prev{
         flex-direction: row-reverse;
     }
@@ -373,7 +406,7 @@ nav#sticky-nav{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
     }
 
     .project-section-sm{
