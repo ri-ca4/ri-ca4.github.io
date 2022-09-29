@@ -148,9 +148,25 @@ nav#sticky-nav{
     font-size: 3em;
 }
 
+/*DESCRIPTION ANIMATION*/
+
 #intro-description{
     height: 20vh;
 }
+
+.txt{
+    border-right: 2px solid var(--white);
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+    50%{
+        border: transparent;
+    }
+}
+
+/*END DESCRIPTION*/
+
 
 .scroll-indicator{
     height: 15vh;
