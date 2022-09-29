@@ -160,7 +160,7 @@ nav#sticky-nav{
 
 .home-section{
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,6 +174,7 @@ nav#sticky-nav{
     justify-content: center;
     height: 20vh;
     margin: 10vw;
+    padding: 5vw;
     text-align: center;
     background-color: var(--transPurple);
 }
@@ -205,12 +206,13 @@ nav#sticky-nav{
 
 #about-prev,
 #projects-prev{
-    height: 45vh;
+    min-height: 45vh;
     display: flex;
     text-align: center;
     padding: 5vw;
     border: 3px solid var(--purple);
     margin: 5vw;
+    width: 100%
 }
 
 #about-prev a,
@@ -338,6 +340,12 @@ nav#sticky-nav{
         height: 100vh;
     }
 
+    #home-skills-text,
+    #about-prev,
+    #projects-prev{
+        border: none;
+    }
+
     #about-prev{
         flex-direction: row;
         align-items: center;
@@ -365,22 +373,30 @@ nav#sticky-nav{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 /*HOME PAGE*/
+    #home-skills,
+    #about-prev,
+    #projects-prev{
+        min-height: auto;
+    }
+
+    .home-section{
+        margin: 0;
+        min-height: auto;
+    }
 
     #intro-name{
         margin: 0;
     }
-
+    
     #projects-prev{
         flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0;
     }
 
     #projects-prev-text{
         padding: 5vw;
         margin: 0;
-    }
-
-    #projects-prev-quote{
-        width: 60%
     }
 
 }
