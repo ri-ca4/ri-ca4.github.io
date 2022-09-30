@@ -14,7 +14,11 @@
 
 body{
     background-color: var(--black);
-    color: var(--white)
+    color: var(--white);
+    background-image: url(../assets/bkgr.png);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container{
@@ -154,6 +158,10 @@ nav#sticky-nav{
     height: 20vh;
 }
 
+.txt-type{
+    font-size: 2em;
+}
+
 .txt{
     border-right: 2px solid var(--white);
     animation: blink 1s linear infinite;
@@ -267,6 +275,9 @@ nav#sticky-nav{
 #about-prev-image{
     height: 0;
     width: 0;
+    background-image: url(../assets/aboutprev.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #projects-prev{

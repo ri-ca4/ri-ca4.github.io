@@ -53,7 +53,7 @@ function init() {
 
 /*
     title: write-list
-    date: 9/29/22
+    date: 9/30/22
 */
 
 var list = document.getElementById('home-skills-list');
