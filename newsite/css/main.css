@@ -302,9 +302,17 @@ nav#sticky-nav{
 }
 
 
-#headshot{/*--------------change when img is inserted-----------------*/
-    height: 100vw;  
-    width: 100%;
+#headshot{
+    height: 80vw;  
+    width: 80%;
+    margin: 10vw;
+    background-image: url(../assets/head-sm.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#headshot.vin{
+    box-shadow: inset 0 0 150px var(--black);
 }
 
 #about-scroll{
@@ -399,7 +407,7 @@ nav#sticky-nav{
         justify-content: center;
     }
 
-    #about-prev-image{/*--------------change when img is inserted-----------------*/
+    #about-prev-image{
         min-height: 30vw;
         min-width: 30vw;
         background-image: url(../assets/aboutprev.png);
@@ -409,10 +417,12 @@ nav#sticky-nav{
     }
 
 /*ABOUT PAGE*/
-    #headshot{/*--------------change when img is inserted-----------------*/
-        height: 50vw;  
-        width: 50%;
+    #headshot{
+        height: 60vw;
+        width: 80vw;
+        background-image: url(../assets/head-md.jpg);
     }
+
 
 /*PROJECTS PAGE*/
     .project-showcase{/*--------------change when vid is inserted-----------------*/
@@ -458,13 +468,15 @@ nav#sticky-nav{
     #about-content{
         display: inline-flex;
         flex-direction: row;
-        height: fit-content;
+        height: 80vh;
     }
 
     #headshot{
         display: inline-block; 
-        width: 50%;
-        height: 78.5vh;
+        width: 80vh;
+        height: 100%;
+        margin: none;
+        background-image: url(../assets/head-lg.jpg);
     }
 
     #about-scroll{
