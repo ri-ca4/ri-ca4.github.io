@@ -2,7 +2,6 @@
 /*
     title: typewriter
     date: 9/29/22
-    author: rica4
 */
 
 const Typewriter = function(txtElement, words, wait){
@@ -51,3 +50,54 @@ function init() {
     const wait = txtElement.getAttribute('data-wait');
     new Typewriter(txtElement, words, wait);
 }
+
+/*
+    title: write-list
+    date: 9/29/22
+*/
+
+var list = document.getElementById('home-skills-list');
+var listItems = list.children;
+var itemIndex = 0;
+var triggered = false;
+
+
+const writeList = ()=>{
+    if(itemIndex == listItems.length){
+        clearInterval()
+    }else{
+        listItems[itemIndex].classList.add('reveal')
+        itemIndex++
+    }
+}
+
+
+const isInViewPort = (element)=> {
+    var bounding = element.getBoundingClientRect();
+    if (
+        bounding.left >= 0 &&
+        bounding.top >= 0 &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        console.log('In the viewport! :)');
+        window.removeEventListener('scroll', executeWriteList, false);
+        return true;
+        
+    } else {
+        console.log('Not in the viewport. :(');
+        return false;
+    }
+}
+
+const executeWriteList = ()=>{
+    if(isInViewPort(list)){
+        console.log('executed')
+        setInterval(() => {
+            writeList()
+        }, 1000);
+    }
+}
+
+window.addEventListener('scroll', executeWriteList, false);
+

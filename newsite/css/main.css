@@ -203,6 +203,11 @@ nav#sticky-nav{
     text-align: center;
 }
 
+#home-skills h1{
+    font-size: 2.2em;
+    text-decoration: underline;
+}
+
 #home-skills-text{
     padding: 5vw;
     border: 3px solid var(--purple);
@@ -212,13 +217,29 @@ nav#sticky-nav{
 #home-skills-list{
     list-style: none;
     margin:5vw;
-    background-color: var(--transPurple);
     width: 100%;
 }
 
 #home-skills-list li{
-    font-size: 1.2em;
+    font-size: 2em;
+    opacity: 0;
 }
+
+/*LIST ITEMS ANIMATION*/
+
+.reveal{
+    animation: reveal 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal{
+    100%{
+        opacity: 100;
+    }
+}
+
+
+/*END LIST ITEMS ANIMATION*/
 
 #about-prev,
 #projects-prev{
