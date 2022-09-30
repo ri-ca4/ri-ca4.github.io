@@ -52,6 +52,7 @@ a{
 
 nav{
     position: fixed;
+    z-index: 1;
     top:0;
     width: 100%;
     display: flex;
@@ -275,9 +276,6 @@ nav#sticky-nav{
 #about-prev-image{
     height: 0;
     width: 0;
-    background-image: url(../assets/aboutprev.png);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #projects-prev{
@@ -392,6 +390,7 @@ nav#sticky-nav{
     #about-prev,
     #projects-prev{
         border: none;
+        margin: 0;
     }
 
     #about-prev{
@@ -401,8 +400,12 @@ nav#sticky-nav{
     }
 
     #about-prev-image{/*--------------change when img is inserted-----------------*/
-        min-height: 30vw;  
+        min-height: 30vw;
         min-width: 30vw;
+        background-image: url(../assets/aboutprev.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
 /*ABOUT PAGE*/
