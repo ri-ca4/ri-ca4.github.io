@@ -231,12 +231,12 @@ nav#sticky-nav{
 
 #home-skills-list li{
     font-size: 2em;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 /*LIST ITEMS ANIMATION*/
 
-.reveal{
+/* .reveal{
     animation: reveal 1s ease;
     animation-fill-mode: forwards;
 }
@@ -246,7 +246,7 @@ nav#sticky-nav{
         opacity: 100;
     }
 }
-
+ */
 
 /*END LIST ITEMS ANIMATION*/
 
