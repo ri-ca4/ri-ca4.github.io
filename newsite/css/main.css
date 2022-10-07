@@ -25,7 +25,7 @@ body{
 .container{
     position: relative;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .wrapper{
@@ -104,6 +104,11 @@ footer a{
     text-decoration: none;
     font-size: 1.3em;
     color: var(--white)
+}
+
+.icon{
+    height: 2em;
+    width: 2em;
 }
 
 footer a:focus,
@@ -304,9 +309,9 @@ nav#sticky-nav{
 
 
 #headshot{
-    height: 80vw;  
-    width: 80%;
-    margin: 10vw;
+    height: 100vw;  
+    width: 100vw;
+    margin-bottom: 10vw;
     background-image: url(../assets/head-sm.jpg);
     background-position: center;
     background-size: cover;
@@ -338,12 +343,14 @@ nav#sticky-nav{
 }
 
 .scroll-section p{
-    margin-bottom: 10vh
+    margin-bottom: 5vh;
 }
 
 
 /*     PROJECT PAGE     */
-
+.project-section:first-of-type{
+    margin-top: 10vh;
+}
 
 .project-section,
 .project-section-sm{
@@ -355,7 +362,7 @@ nav#sticky-nav{
     text-align: center;
 }
 
-.project-showcase{/*--------------change when vid is inserted-----------------*/
+.project-showcase video{
     height: 75vw;
     width: 100%;
 }
@@ -385,7 +392,18 @@ nav#sticky-nav{
     margin-top: 10vh;
 }
 
+.contact-icon{
+    height: 10vh;
+    width: 10vh;
+}
 
+#contacts{
+    list-style: none;
+}
+
+#contacts > li > a{
+    font-size: 1.5em;
+}
 
 
 
@@ -421,13 +439,13 @@ nav#sticky-nav{
 /*ABOUT PAGE*/
     #headshot{
         height: 60vw;
-        width: 80vw;
+        width: 60vw;
         background-image: url(../assets/head-md.jpg);
     }
 
 
 /*PROJECTS PAGE*/
-    .project-showcase{/*--------------change when vid is inserted-----------------*/
+    .project-showcase video{
         height: 75vh;
         width: 100%;
     }
@@ -435,13 +453,13 @@ nav#sticky-nav{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body{
+    /* body{
         background-image: url(../assets/bkgr.png);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
-    }
+    } */
 /*HOME PAGE*/
     #home-skills,
     #about-prev,
@@ -475,25 +493,23 @@ nav#sticky-nav{
 @media only screen and (min-width: 992px) {
 /*ABOUT PAGE*/
     #about-content{
-        display: inline-flex;
         flex-direction: row;
         height: 80vh;
     }
-
+    
     #headshot{
         display: inline-block; 
-        width: 80vh;
-        height: 100%;
-        margin: none;
-        background-image: url(../assets/head-lg.jpg);
+        height: 80vh;
+        width: 45vw;
+        margin: 0;
+        padding: 0;
+        background-image: url("../assets/head-lg.jpg");
     }
 
     #about-scroll{
-        display: inline-block;
-        height: 78.5vh;
-        width: 50%;
+        height: 100%;
         overflow-y: scroll;
-        margin: 0;
+        margin:0;
         padding: 0;
     }
 
@@ -515,13 +531,13 @@ nav#sticky-nav{
         width: 100%;
     }
 
-    .project-showcase{/*--------------change when vid is inserted-----------------*/
+    .project-showcase video{
         height: 75vh;
         width: 60vw;
     }
 
     .group{
-        width: 40vw;
+        width: 35vw;
         height: fit-content;
         max-height: 75vh;
     }
