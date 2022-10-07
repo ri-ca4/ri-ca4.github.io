@@ -304,8 +304,8 @@ nav#sticky-nav{
 
 
 #headshot{
-    height: 80vw;  
-    width: 80%;
+    height: 100vw;  
+    width: 100%;
     margin: 10vw;
     background-image: url(../assets/head-sm.jpg);
     background-position: center;
@@ -421,7 +421,7 @@ nav#sticky-nav{
 /*ABOUT PAGE*/
     #headshot{
         height: 60vw;
-        width: 80vw;
+        width: 60vw;
         background-image: url(../assets/head-md.jpg);
     }
 
@@ -479,18 +479,19 @@ nav#sticky-nav{
         flex-direction: row;
         height: 80vh;
     }
-
+    
     #headshot{
         display: inline-block; 
-        width: 80vh;
+        width: 50%;
         height: 100%;
-        margin: none;
+        margin: 0;
+        padding: 0;
         background-image: url(../assets/head-lg.jpg);
     }
 
     #about-scroll{
         display: inline-block;
-        height: 78.5vh;
+        height: 80vh;
         width: 50%;
         overflow-y: scroll;
         margin: 0;
