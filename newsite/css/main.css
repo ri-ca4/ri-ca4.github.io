@@ -357,7 +357,7 @@ nav#sticky-nav{
     text-align: center;
 }
 
-.project-showcase video{/*--------------change when vid is inserted-----------------*/
+.project-showcase video{
     height: 75vw;
     width: 100%;
 }
@@ -429,7 +429,7 @@ nav#sticky-nav{
 
 
 /*PROJECTS PAGE*/
-    .project-showcase{/*--------------change when vid is inserted-----------------*/
+    .project-showcase video{
         height: 75vh;
         width: 100%;
     }
@@ -518,7 +518,7 @@ nav#sticky-nav{
         width: 100%;
     }
 
-    .project-showcase{/*--------------change when vid is inserted-----------------*/
+    .project-showcase video{
         height: 75vh;
         width: 60vw;
     }
