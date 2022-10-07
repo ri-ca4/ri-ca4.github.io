@@ -15,10 +15,11 @@
 body{
     background-color: var(--black);
     color: var(--white);
-    background-image: url(../assets/bkgr.png);
-    background-size: contain;
+    /* background-image: url(../assets/bkgr-sm.png);
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat; */
 }
 
 .container{
@@ -60,7 +61,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-color: var(--darkPurple);
+    background-color: var(--black);
 }
 
 nav a{
@@ -96,7 +97,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-color: var(--darkPurple);
+    background-color: var(--black);
 }
 
 footer a{
@@ -389,6 +390,7 @@ nav#sticky-nav{
 
 
 @media only screen and (min-width: 600px) {
+
 /*HOME PAGE*/
     #home-intro{
         height: 100vh;
@@ -433,6 +435,13 @@ nav#sticky-nav{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    body{
+        background-image: url(../assets/bkgr.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 /*HOME PAGE*/
     #home-skills,
     #about-prev,
