@@ -392,7 +392,18 @@ nav#sticky-nav{
     margin-top: 10vh;
 }
 
+.contact-icon{
+    height: 10vh;
+    width: 10vh;
+}
 
+#contacts{
+    list-style: none;
+}
+
+#contacts > li > a{
+    font-size: 1.5em;
+}
 
 
 
