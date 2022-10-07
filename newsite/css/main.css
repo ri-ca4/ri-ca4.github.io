@@ -15,10 +15,11 @@
 body{
     background-color: var(--black);
     color: var(--white);
-    background-image: url(../assets/bkgr.png);
-    background-size: contain;
+    /* background-image: url(../assets/bkgr-sm.png);
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat; */
 }
 
 .container{
@@ -52,6 +53,7 @@ a{
 
 nav{
     position: fixed;
+    z-index: 1;
     top:0;
     width: 100%;
     display: flex;
@@ -59,7 +61,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-color: var(--darkPurple);
+    background-color: var(--black);
 }
 
 nav a{
@@ -95,7 +97,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-color: var(--darkPurple);
+    background-color: var(--black);
 }
 
 footer a{
@@ -230,12 +232,12 @@ nav#sticky-nav{
 
 #home-skills-list li{
     font-size: 2em;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 /*LIST ITEMS ANIMATION*/
 
-.reveal{
+/* .reveal{
     animation: reveal 1s ease;
     animation-fill-mode: forwards;
 }
@@ -245,7 +247,7 @@ nav#sticky-nav{
         opacity: 100;
     }
 }
-
+ */
 
 /*END LIST ITEMS ANIMATION*/
 
@@ -275,9 +277,6 @@ nav#sticky-nav{
 #about-prev-image{
     height: 0;
     width: 0;
-    background-image: url(../assets/aboutprev.png);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #projects-prev{
@@ -304,9 +303,17 @@ nav#sticky-nav{
 }
 
 
-#headshot{/*--------------change when img is inserted-----------------*/
-    height: 100vw;  
-    width: 100%;
+#headshot{
+    height: 80vw;  
+    width: 80%;
+    margin: 10vw;
+    background-image: url(../assets/head-sm.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#headshot.vin{
+    box-shadow: inset 0 0 150px var(--black);
 }
 
 #about-scroll{
@@ -383,6 +390,7 @@ nav#sticky-nav{
 
 
 @media only screen and (min-width: 600px) {
+
 /*HOME PAGE*/
     #home-intro{
         height: 100vh;
@@ -392,6 +400,7 @@ nav#sticky-nav{
     #about-prev,
     #projects-prev{
         border: none;
+        margin: 0;
     }
 
     #about-prev{
@@ -400,16 +409,22 @@ nav#sticky-nav{
         justify-content: center;
     }
 
-    #about-prev-image{/*--------------change when img is inserted-----------------*/
-        min-height: 30vw;  
+    #about-prev-image{
+        min-height: 30vw;
         min-width: 30vw;
+        background-image: url(../assets/aboutprev.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
 /*ABOUT PAGE*/
-    #headshot{/*--------------change when img is inserted-----------------*/
-        height: 50vw;  
-        width: 50%;
+    #headshot{
+        height: 60vw;
+        width: 80vw;
+        background-image: url(../assets/head-md.jpg);
     }
+
 
 /*PROJECTS PAGE*/
     .project-showcase{/*--------------change when vid is inserted-----------------*/
@@ -420,6 +435,13 @@ nav#sticky-nav{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    body{
+        background-image: url(../assets/bkgr.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 /*HOME PAGE*/
     #home-skills,
     #about-prev,
@@ -455,13 +477,15 @@ nav#sticky-nav{
     #about-content{
         display: inline-flex;
         flex-direction: row;
-        height: fit-content;
+        height: 80vh;
     }
 
     #headshot{
         display: inline-block; 
-        width: 50%;
-        height: 78.5vh;
+        width: 80vh;
+        height: 100%;
+        margin: none;
+        background-image: url(../assets/head-lg.jpg);
     }
 
     #about-scroll{

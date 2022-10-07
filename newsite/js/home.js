@@ -42,7 +42,7 @@ Typewriter.prototype.type = function() {
     setTimeout(()=>this.type(), typeSpeed)
 }
 
-document.addEventListener('DOMContentLoaded', init)
+window.onload = init()
 
 function init() {
     const txtElement = document.querySelector(".txt-type");
@@ -51,53 +51,51 @@ function init() {
     new Typewriter(txtElement, words, wait);
 }
 
-/*
-    title: write-list
-    date: 9/30/22
-*/
+// /*
+//     title: write-list
+//     date: 9/30/22
+// */
 
-var list = document.getElementById('home-skills-list');
-var listItems = list.children;
-var itemIndex = 0;
-var triggered = false;
-
-
-const writeList = ()=>{
-    if(itemIndex == listItems.length){
-        clearInterval()
-    }else{
-        listItems[itemIndex].classList.add('reveal')
-        itemIndex++
-    }
-}
+// var list = document.getElementById('home-skills-list');
+// var listItems = list.children;
+// var itemIndex = 0;
+// var triggered = false;
 
 
-const isInViewPort = (element)=> {
-    var bounding = element.getBoundingClientRect();
-    if (
-        bounding.left >= 0 &&
-        bounding.top >= 0 &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    ) {
-        console.log('In the viewport! :)');
-        window.removeEventListener('scroll', executeWriteList, false);
-        return true;
+// const writeList = ()=>{
+//     if(itemIndex == listItems.length){
+//         clearInterval()
+//     }else{
+//         listItems[itemIndex].classList.add('reveal')
+//         itemIndex++
+//     }
+// }
+
+
+// const isInViewPort = (element)=> {
+//     var bounding = element.getBoundingClientRect();
+//     if (
+//         bounding.left >= 0 &&
+//         bounding.top >= 0 &&
+//         bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+//         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+//     ) {
+//         window.removeEventListener('scroll', executeWriteList, false);
+//         return true;
         
-    } else {
-        console.log('Not in the viewport. :(');
-        return false;
-    }
-}
+//     } else {
+//         return false;
+//     }
+// }
 
-const executeWriteList = ()=>{
-    if(isInViewPort(list)){
-        console.log('executed')
-        setInterval(() => {
-            writeList()
-        }, 1000);
-    }
-}
+// const executeWriteList = ()=>{
+//     if(isInViewPort(list)){
+//         console.log('executed')
+//         setInterval(() => {
+//             writeList()
+//         }, 500);
+//     }
+// }
 
-window.addEventListener('scroll', executeWriteList, false);
+// window.addEventListener('scroll', executeWriteList, false);
 
