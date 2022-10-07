@@ -343,7 +343,9 @@ nav#sticky-nav{
 
 
 /*     PROJECT PAGE     */
-
+.project-section:first-of-type{
+    margin-top: 10vh;
+}
 
 .project-section,
 .project-section-sm{
@@ -355,7 +357,7 @@ nav#sticky-nav{
     text-align: center;
 }
 
-.project-showcase{/*--------------change when vid is inserted-----------------*/
+.project-showcase video{/*--------------change when vid is inserted-----------------*/
     height: 75vw;
     width: 100%;
 }
