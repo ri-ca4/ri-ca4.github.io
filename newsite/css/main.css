@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/xap2uoc.css");
+
 :root{
     --purple: #7a00d0;
     --darkPurple: #450176;
@@ -15,6 +17,8 @@
 body{
     background-color: var(--black);
     color: var(--white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     /* background-image: url(../assets/bkgr-sm.png);
     background-size: cover;
     background-position: center;
@@ -36,7 +40,14 @@ body{
     padding-bottom: 10vh;
 }
 
+h2, h3, h4 {
+    font-family: nitti-typewriter-normal, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h1{
+    font-family: 'Battery Park', sans-serif;
     font-size: 1.5em;
 }
 
@@ -82,6 +93,9 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin: 0 3vw;
+    font-family: nitti-typewriter-normal, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -154,9 +168,6 @@ nav#sticky-nav{
 #intro-name{
     font-size: 2em;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    font-size: 3em;
 }
 
 /*DESCRIPTION ANIMATION*/
@@ -170,6 +181,9 @@ nav#sticky-nav{
 }
 
 .txt{
+    font-family: nitti-typewriter-normal, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     border-right: 2px solid var(--white);
     animation: blink 1s linear infinite;
 }
@@ -244,8 +258,7 @@ nav#sticky-nav{
 }
 
 #home-skills h1{
-    font-size: 2.2em;
-    text-decoration: underline;
+    font-size: 3em;
 }
 
 #home-skills-text{
@@ -261,7 +274,7 @@ nav#sticky-nav{
 }
 
 #home-skills-list li{
-    font-size: 2em;
+    font-size: 1.2em;
     /* opacity: 0; */
 }
 
@@ -360,15 +373,17 @@ nav#sticky-nav{
 }
 
 #about-scroll h1{
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .scroll-section h2{
     font-size: 1.7em;
+    padding-bottom: 1em;
 }
 
 .scroll-section h3{
     font-size: 1.5em;
+    padding: 1em;
 }
 
 .scroll-section p{
@@ -407,6 +422,11 @@ nav#sticky-nav{
     justify-content: center;
     width: 100%;
     text-align: center;
+}
+
+.project-section h2,
+.project-section-sm h2{
+    font-size: 2em;
 }
 
 .project-showcase video{
@@ -459,6 +479,10 @@ nav#sticky-nav{
 /*HOME PAGE*/
     #home-intro{
         height: 100vh;
+    }
+
+    #intro-name{
+        font-size: 3em;
     }
 
     #home-skills-text,
