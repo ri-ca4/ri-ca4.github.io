@@ -182,13 +182,14 @@ nav#sticky-nav{
 
 /*END DESCRIPTION*/
 
+/*SCROLL INDICATOR*/
 .scroll-indicator{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 5vh;
-    height: 30vh;
+    height: 20vh;
 }
 
 
@@ -200,13 +201,16 @@ nav#sticky-nav{
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         border-radius: 10px;
+        opacity: 0;
         animation: bounce 1s ease-in-out alternate 2;
 }
 
 @keyframes bounce {
-    from { transform: translate3d(0, 0, 0) rotate(45deg);;}
-    to { transform: translate3d(0, 10vh, 0) rotate(45deg);;}
+    from { transform: translate3d(0, 0, 0) rotate(45deg); opacity: 0;}
+    to { transform: translate3d(0, 10vh, 0) rotate(45deg); opacity: 1;}
 }
+
+/*END SCROLL INDICATOR*/
 
 /*     CONTENT SECTIONS     */
 
@@ -345,6 +349,10 @@ nav#sticky-nav{
 #about-scroll{
     text-align: center;
     padding: 5vh;
+}
+
+.scroll-indicator.about{
+    display: none;    
 }
 
 .scroll-section{
@@ -532,6 +540,13 @@ nav#sticky-nav{
         overflow-y: scroll;
         margin:0;
         padding: 0;
+    }
+
+    
+    .scroll-indicator.about{
+        display: block;
+        position: relative;
+        bottom: 10vh;
     }
 
 /*PROJECTS PAGE*/
