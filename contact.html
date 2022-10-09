@@ -7,57 +7,43 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Contact Me</title>
-        <meta name="description" content="">
+        <title>Contact Riley</title>
+        <meta name="description" content="Web-Developer portfolio contact page">
+        <meta name="author" content="ri-ca4">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="sticky">
-            <ul id="navlinks">
-                <li><a href="index.html"><img class="btn" src="img\buttons\home-btn.gif" alt="Home"></a></li>
-                <li><a href="aboutme.html"><img class="btn" src="img\buttons\aboutme-btn.gif" alt="About Me"></a></li>
-                <li><a href="projects.html"><img class="btn" src="img\buttons\projects-btn.gif" alt="Projects"></a></li>
-                <!-- <li><a href="contact.html"><img class="btn" src="img\buttons\contact-btn.gif" alt="Contact"></a></li> -->
-              </ul>
-        </nav>
-        
-        <div id="contactPage" class="">
-            <div id="contact-list">
-                <div class="contact">
-                    <a href="mailto:riley.de12@gmail.com"><img id="email" class="icon" src="img\icons\email.gif" alt="email"></a>
-                    <h2>riley.de12@gmail.com</h2>
+        <div class="container">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a role="link" aria-disabled="true">Contact</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div id="contact-page">
+                    <ul id="contacts">
+                        <li><a href="mailto:riley.de12@gmail.com" title="send email to riley.de12@gmail.com"><img class="contact-icon" src="./assets/email.png" alt="Email"> riley.de12@gmail.com</a></li>
+                        <li><a href="https://github.com/ri-ca4"><img class="contact-icon" src="./assets/github.png" alt="Github"> ri-ca4</a></li>
+                        <li><a href="https://www.linkedin.com/in/riley-eyrich-a4ab17239/"><img class="contact-icon" src="./assets/linkdedin.png" alt="LinkedIn"> Riley Eyrich</a></li>
+                        <!-- <li><a href="https://twitter.com/rileyde12">Twitter: rileyde12</a></li> -->
+                    </ul>
                 </div>
-                <div class="contact">
-                    <a href="https://github.com/ri-ca4"><img id="github" class="icon" src="img\icons\github.gif" alt="github"></a>
-                    <h2>ri-ca4</h2>
-                </div>
-                <div class="contact">
-                    <a href="https://www.linkedin.com/in/riley-eyrich-a4ab17239/"><img id="linkedIn" class="icon" src="img\icons\linkedin.gif" alt="linked in"></a>
-                    <h2>Riley Eyrich</h2>
-                </div>
-                <div class="contact">
-                    <a href="https://twitter.com/rileyde12"><img id="twitter" class="icon" src="img\icons\twitter.gif" alt="twitter"></a>
-                    <h2>@rileyde12</h2>
-                </div>
-            </div>
+            </main>
+        </div>
+            <footer>
+                <p>Thank you for visiting!</p>
+            </footer>
         </div>
 
-        <footer>
-            <h3>Thank you for visiting my website!</h3>
-        </footer>
 
-
-
-        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <!--<script src="js/main.js"></script>-->
+        <!-- <script src="js/main.js" async defer></script> -->
     </body>
 </html>
