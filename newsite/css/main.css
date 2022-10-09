@@ -459,6 +459,9 @@ nav#sticky-nav{
     height: 80vh;
     width: 100%;
     margin-top: 10vh;
+    background-image: url('../assets/contact-bkgr-sm.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-icon{
@@ -560,6 +563,11 @@ nav#sticky-nav{
         margin: 0;
     }
 
+    /*CONTACT PAGE*/
+
+    #contact-page{
+        background-image: url('../assets/contact-bkgr.png');
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
