@@ -7,93 +7,118 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Riley's Projects</title>
+        <meta name="description" content="Web-Developer portfolio projects page">
+        <meta name="author" content="ri-ca4">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css\main.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="sticky">
-          <ul id="navlinks">
-            <li><a href="index.html"><img class="btn" src="img\buttons\home-btn.gif" alt="Home"></a></li>
-            <li><a href="aboutme.html"><img class="btn" src="img\buttons\aboutme-btn.gif" alt="About Me"></a></li>
-            <!-- <li><a href="projects.html"><img class="btn" src="img\buttons\projects-btn.gif" alt="Projects"></a></li> -->
-            <li><a href="contact.html"><img class="btn" src="img\buttons\contact-btn.gif" alt="Contact"></a></li>
-          </ul>
-        </nav>
-
-        <div class="full-screen">
-            <header>
-            <h1 id="header">
-                My Projects
-            </h1>
-            </header>
+        <div class="container">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a role="link" aria-disabled="true">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main>
+            <div id="projects-page">
+                <div id="projects-intro">
+                    <h1>Riley's Projects</h1>
+                    <p></p>
+                </div>
+            <!--REACT-->
+                <section id="react-example" class="project-section">
+                    <div class="project-showcase">
+                        <video
+                            src="./assets/skills-wiz.mp4"
+                                controls
+                                autoplay
+                                playsinline
+                                muted
+                                loop
+                                alt="demo of skills wiz app">
+                        </video>
+                    </div>
+                    <div class="group">
+                        <div class="project-description">
+                            <h2>Skills Wiz</h2>
+                            <p>
+                                This application was designed using a worksheet from Dialectical Behavioral 
+                                Therapy (DBT) which suggests a set of skills for an individual to use based on 
+                                their distress level. DBT is a therapeutic approach which teaches healthy 
+                                coping behaviors and living in the moment.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <a href="">See the full process here</a><br/>
+                            <a target="_blank" href="skillswizapp.netlify.app">Check out Skills Wiz <span class="warn">(opens in new window)</span></a><br/>
+                            <a target="_blank" href="https://github.com/ri-ca4/skillswizapp">Github Repo <span class="warn">(opens in new window)</span></a>
+                        </div>
+                    </div>
+                </section>
+            <!--NODE-->
+                <section  id="node-example" class="project-section">
+                    <div class="project-showcase">
+                        <video 
+                                src="./assets/stat-gen.mp4"
+                                controls
+                                autoplay
+                                playsinline
+                                muted
+                                loop
+                                alt="demo of character generator app">
+                        </video>
+                    </div>
+                    <div class="group">
+                        <div class="project-description">
+                            <h2>Character Stat Generator</h2>
+                            <p>
+                                This fun application uses multiple data types and ES6 classes 
+                                to randomly generate stats for RPG characters. The function which 
+                                determines the stat numbers simulates a common method for 
+                                determining stats in which a player rolls 4 d6 dice, drops lowest
+                                value, and then adds the remaining values
+                            </p>
+                        </div>
+                        <div class="project-links">
+                                <a target="_blank" href="https://stat-generator.herokuapp.com/">Character Stat Generator App <span class="warn">(opens in new window)</span></a> <br/> 
+                                <a target="_blank" href="https://github.com/ri-ca4/mad-libs">Github Repo <span class="warn">(opens in new window)</span></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="project-section-sm">
+                    <div class="project-description">
+                        <h2>MadLibs</h2>
+                        <p>
+                            A simple game centered around collecting and using information 
+                            off of HTML forms. 
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a target="_blank" href="https://rica-madlibs.herokuapp.com/">Madlibs App <span class="warn">(opens in new window)</span></a><br/>
+                        <a target="_blank" href="https://github.com/ri-ca4/mad-libs">Github Repo <span class="warn">(opens in new window)</span></a>
+                    </div>
+                </section>
+            </div>
+            </main>
+        </div>
+            <footer>
+                <ul>
+                    <li><a href="mailto:riley.de12@gmail.com" title="send email to riley.de12@gmail.com"><img class="icon" src="./assets/email.png" alt="Email"></a></li>
+                    <li><a href="https://github.com/ri-ca4"><img class="icon" src="./assets/github.png" alt="Github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/riley-eyrich-a4ab17239/"><img class="icon" src="./assets/linkdedin.png" alt="LinkedIn"></a></li>
+                    <!-- <li><a href="https://twitter.com/rileyde12">Twitter</a></li> -->
+                </ul>
+            </footer>
         </div>
 
-        <div class="full-screen row">
-            <div class="card-row">
-              <h1>CSS Animations</h1>
-              <p>
-                CSS Animations are a fun way to add some movement to an otherwise
-                static page. Here are some animations I created using just CSS.
-              </p>
-              <ul class="project-list">
-                <li><a href="project/ball.html">Bouncing Ball</a></li>
-                <li><a href="project/color_text.html">Colorful Text</a></li>
-                <li><a href="project/4square.html">Squared Breathing Animation</a></li>
-              </ul>
-            </div>
-            <div class="card-row">
-              <h1>Javascript</h1>
-              <p>Here are some of my favorite Javascript projects:</p>
-              <ul class="project-list">
-                <li><a href="project/clock.html">A simple clock synced to client time</a></li>
-                <li><a href="project/countdown.html">A countdown timer</a></li>
-                <!-- <li><a href="project/todo.html">A To-Do List utilizing local storage</a></li> -->
-              </ul>
-            </div>
-            <div class="card-row">
-              <h1>My applications</h1>
-              <p>Here are some applications I've built:</p>
-              <h3><a href="https://rica-madlibs.herokuapp.com/">Mad Libs</a></h3>
-              <p>This simple game utilizes an HTML form to collect information, and Express and 
-                EJS to get, use, and display the information.</p>
-              <p><a href="https://github.com/ri-ca4/mad-libs">Github Repo</a></p>
-              <h3><a href="https://stat-generator.herokuapp.com/">Character Stats Generator</a></h3>
-              <p>This app uses multiple Javascript datatypes to store sets of data(objects, multidemensional arrays, etc). 
-                This data is stored separate to allow for clean code and is imported and used 
-                to create unique character sheets at the click of a button
-              </p>
-              <p><a href="https://github.com/ri-ca4/CharacterSheetGenerator">Github Repo</a></p>
-            </div>
-          </div>
-          
-          <div class="full-screen quote">
-            <h1>
-              “Learn the rules like a pro, so you can break them like an artist.”</h1>
-            <h2>- Pablo Picasso</h2>
-          </div>
-
-          <footer>
-            <ul id="icon-links">
-              <li><a href="mailto:riley.de12@gmail.com"><img id="email" class="icon" src="img\icons\email_white.gif" alt="email"></li>
-              <li><a href="https://github.com/ri-ca4"><img id="github" class="icon" src="img\icons\github_white.gif" alt="github"></li>
-              <li><a href="https://www.linkedin.com/in/riley-eyrich-a4ab17239/"><img id="linkedIn" class="icon" src="img\icons\linkedin_white.gif" alt="linked in"></a></li>
-              <li><a href="https://twitter.com/rileyde12"><img id="twitter" class="icon" src="img\icons\twitter_white.gif" alt="twitter"></a></a></li>
-            </ul>
-          </footer>
-        
-        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/main.js" async defer></script> -->
     </body>
 </html>
