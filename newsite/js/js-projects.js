@@ -8,6 +8,7 @@
 
 $(document).ready(function(){
     $("button").click(function(){
-      $("#page_content").load("projects/test.html");
+        var id = $(this).attr('id');
+        $("#page_content").load(`projects/${id}.html`);
     });
   });
