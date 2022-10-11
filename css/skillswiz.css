@@ -1,0 +1,109 @@
+@import url(main.css);
+
+:root{
+    --lightBlue: #99ccff;
+    --darkBlue: #336699;
+
+}
+
+#skillswiz-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+    padding: 5vw;
+}
+
+#title h1{
+    font-size: 3em;
+    color: var(--darkBlue);
+}
+
+#title img{
+    height: 50vw;
+    width: 50vw;
+}
+
+.sw-section{
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sw-section p{
+    margin-bottom: 5vh;
+}
+
+.sw-section img{
+    width: 90%;
+}
+
+.sw-img-group{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sw-img-group img{
+    width: 100%;
+}
+
+#conclusion{
+    margin: 5vh 0;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .sw-img-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sw-img-group img{
+        width: 40%;
+    }
+
+    .sw-img-group img.sm{
+        width: 30vw;
+    }
+
+    .sw-img-group img.lg{
+        width: 60vw;
+    }
+
+    .sw-section img{
+        width: 60%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #title{
+        margin-top: 0;
+    }
+    
+    #title img{
+        height: 50vh;
+        width: 50vh;
+    }
+
+    .sw-section img{
+        width: 40%;
+    }
+
+}
