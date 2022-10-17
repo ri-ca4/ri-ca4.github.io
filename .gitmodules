@@ -1,0 +1,3 @@
+[submodule "job-search-organizer"]
+	path = job-search-organizer
+	url = git@github.com:ri-ca4/job-search-organizer.git
