@@ -396,45 +396,50 @@ nav#sticky-nav{
 
 /*     PROJECT PAGE     */
 #projects-page{
-    height: 80vh;
+    position: relative;
     width: 100%;
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 15vh;
+    margin-top: 10vh;
+    height: 80vh;
     text-align: center;
+    padding-bottom: 10vh;
 }
 
 .slideshow{
-    position: relative;
     margin: auto;
+    width: 100%;
+    height: 100%
 }
 
 .project-slide{
     display: none;
-    height: 100%;
-    width: 90vw;
     flex-direction: column;
-    align-items: center;
+
 }
 
 .project-info{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10vw;
 }
 
 .project-desc{
-    width: 45%;
+    width: 100%;
+    height: 35vh;
+}
+
+.project-desc p{
+    font-size: 1em;
 }
 
 .project-img{
     border: 1px solid white;
-    width: 45%;
-    height: 50vh;
+    width: 100%;
+    height: 40vh;
 }
 
 .fade{
@@ -449,8 +454,8 @@ nav#sticky-nav{
 
 .dot{
     cursor: pointer;
-    height: 1em;
-    width: 1em;
+    height: 3vh;
+    width: 3vh;
     margin: 0 .5em;
     background-color: var(--transWhite);
     border-radius: 50%;
@@ -460,6 +465,30 @@ nav#sticky-nav{
 
 .active, .dot:hover {
     background-color: var(--white);
+}
+
+.slide-dots{
+    position: absolute;
+    bottom: 0;
+}
+
+.slide-buttons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom:5vh;
+    justify-content: space-between;
+}
+
+.slide-buttons >button{
+    cursor: pointer;
+    height: 5vh;
+    width: 40vw;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2.5em;
+    text-align: center;
 }
 
 /*     CONTACT PAGE     */
