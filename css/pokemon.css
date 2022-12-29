@@ -1,0 +1,100 @@
+:root{
+    --yellow: #E9C236;
+    --blue: #4263AB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color:#fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+
+#pkmnCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid var(--yellow);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    width: 315px;
+    height: 440px;
+    box-shadow: 2px 3px 33px 12px #00000030;
+    -webkit-box-shadow: 2px 3px 33px 12px #00000030;
+    -moz-box-shadow: 2px 3px 33px 12px #00000030;
+}
+
+#image{
+    background-color: #fff;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid var(--yellow);
+    border-radius: 1px;
+}
+
+#pkmnImage{
+    width: auto;
+    height: 180px;
+}
+
+.energy{
+    height: 20px;
+    width: 20px;
+}
+
+.top{
+    justify-content: space-between;
+}
+
+.desc{
+    justify-content: space-around;
+    background-color: var(--yellow);
+}
+
+#move{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 90%;
+    height: 100px;
+    margin: 5px;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 3px solid var(--yellow);
+    background-color: white;
+}

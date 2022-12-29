@@ -29,92 +29,58 @@
             </nav>
             <main>
             <div id="projects-page">
-                <div id="projects-intro">
-                    <h1>Riley's Projects</h1>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- <h2>Job Search Organizer</h2>
-                    <p>
-                        Looking for a new job is a daunting task, and keeping your search 
-                        organized is a job on it's own. This web app was built to make
-                        that task a little easier.
-                    </p>
-                    <a href="./job-search-organizer/index.html">Try the Job Search Organizer for yourself!</a>-->
+                <div class="slideshow">
+                    <div class="project-slide fade">
+                        <h1>Character Sheet Generator</h1>
+                        <div class="project-info">
+                            <div class="project-img"></div> 
+                            <div class="project-desc">
+                                <p>Randomly generate character stats for RPG characters. Select World of Warcraft or Dungeons and Dragons and get playable Race/Class combinations for each.</p>
+                                <a href="chargenerator.html">Try the Character Sheet Generator Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-slide fade">
+                        <h1>Job Search Organizer</h1>
+                        <div class="project-info">
+                            <div class="project-img"></div> 
+                            <div class="project-desc">
+                                <p>A tool for keeping track of job applications, interviews, and offers that utilizes local storage so you can keep coming back with no log-in required</p>
+                                <a href="job.html">Try the Job Search Organizer here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-slide fade">
+                        <h1>Pokemon Card Generator</h1>
+                        <div class="project-info">
+                            <div class="project-img"></div> 
+                            <div class="project-desc">
+                                <p>A fun application which utilizes PokeAPI to create a simple pokemon card at random</p>
+                                <a href="pokemon.html">Try the Pokemon Card Generator here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-slide fade">
+                        <h1>Skills Wiz</h1>
+                        <div class="project-info">
+                            <div class="project-img"></div> 
+                            <div class="project-desc">
+                                <p>A REACT application based off of a DBT worksheet which suggests sets of skills based on the users distress level</p>
+                                <a href="https://skillswizapp.netlify.app">Try Skills Wiz here</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <!--REACT-->
-                <section id="react-example" class="project-section">
-                    <div class="project-showcase">
-                        <video
-                            src="./assets/skills-wiz.mp4"
-                                controls
-                                autoplay
-                                playsinline
-                                muted
-                                loop
-                                alt="demo of skills wiz app">
-                        </video>
-                    </div>
-                    <div class="group">
-                        <div class="project-description">
-                            <h2>Skills Wiz</h2>
-                            <p>
-                                This application was designed using a worksheet from Dialectical Behavioral 
-                                Therapy (DBT) which suggests a set of skills for an individual to use based on 
-                                their distress level. DBT is a therapeutic approach which teaches healthy 
-                                coping behaviors and living in the moment.
-                            </p>
-                        </div>
-                        <div class="project-links">
-                        <!--    <a href="skillswiz.html">About the development of Skills Wiz</a><br/>
-                        -->   <a href="https://skillswizapp.netlify.app">Check out Skills Wiz </a><br/>
-                            <a href="https://github.com/ri-ca4/skillswizapp">Github Repo </a>
-                        </div>
-                    </div>
-                </section>
-            <!--NODE-->
-                <section  id="node-example" class="project-section">
-                    <div class="project-showcase">
-                        <video 
-                                src="./assets/stat-gen.mp4"
-                                controls
-                                autoplay
-                                playsinline
-                                muted
-                                loop
-                                alt="demo of character generator app">
-                        </video>
-                    </div>
-                    <div class="group">
-                        <div class="project-description">
-                            <h2>Character Stat Generator</h2>
-                            <p>
-                                This fun application uses multiple data types and ES6 classes 
-                                to randomly generate stats for RPG characters. The function which 
-                                determines the stat numbers simulates a common method for 
-                                determining stats in which a player rolls 4 d6 dice, drops lowest
-                                value, and then adds the remaining values
-                            </p>
-                        </div>
-                        <div class="project-links">
-                                <!-- <a target="_blank" href="https://stat-generator.herokuapp.com/">Character Stat Generator App <span class="warn">(opens in new window)</span></a> <br/>  -->
-                                <a href='https://github.com/ri-ca4/CharacterSheetGenerator'>Github Repo</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- <section class="project-section-sm">
-                    <div class="project-description">
-                        <h2>MadLibs</h2>
-                        <p>
-                            A simple game centered around collecting and using information 
-                            off of HTML forms. 
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a target="_blank" href="https://rica-madlibs.herokuapp.com/">Madlibs App <span class="warn">(opens in new window)</span></a><br/>
-                        <a target="_blank" href="https://github.com/ri-ca4/mad-libs">Github Repo <span class="warn">(opens in new window)</span></a>
-                    </div>
-                </section> -->
+                <div class="slide-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <div class="slide-buttons">
+                    <button id="prev-slide" onclick="prevNext(-1)">&#10094;</button>
+                    <button id="next-slide" onclick="prevNext(1)">&#10095;</button>
+                </div>
             </div>
             </main>
         </div>
@@ -128,6 +94,6 @@
             </footer>
         </div>
 
-        <!-- <script src="js/main.js" async defer></script> -->
+        <script src="js/projects.js" async defer></script>
     </body>
 </html>
