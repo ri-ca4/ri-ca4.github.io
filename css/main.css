@@ -409,8 +409,9 @@ nav#sticky-nav{
 }
 
 .slideshow{
-    margin: auto;
     width: 100%;
+    overflow-y: scroll;
+    height: 70vh;
 }
 
 .project-slide{
@@ -429,8 +430,9 @@ nav#sticky-nav{
 
 .project-img{
     width: 100%;
-    height: 40vh;
+    padding: 5vw;
 }
+
 
 .fade{
     animation-name: fade;
@@ -593,6 +595,16 @@ nav#sticky-nav{
     #contact-page{
         background-image: url('../assets/contact-bkgr.png');
     }
+
+    /*SKILLS PAGE*/
+    .project-img{
+        width: 65vh;
+    }
+
+    .slideshow{
+        margin: auto;
+        width: 70%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -626,5 +638,8 @@ nav#sticky-nav{
         bottom: 10vh;
     }
 
-
+    /*PROJECT PAGE*/
+    .project-info{
+        flex-direction: row;
+    }
 }
