@@ -408,10 +408,8 @@ nav#sticky-nav{
     padding-bottom: 10vh;
 }
 
-.slideshow{
+/* .slideshow{
     width: 100%;
-    overflow-y: scroll;
-    height: 70vh;
 }
 
 .project-slide{
@@ -424,7 +422,6 @@ nav#sticky-nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10vw;
 }
 
 
@@ -459,20 +456,25 @@ nav#sticky-nav{
     background-color: var(--white);
 }
 
-.slide-dots{
-    position: absolute;
-    bottom: 0;
-}
-
 .slide-buttons{
     display: flex;
     flex-direction: row;
-    position: absolute;
-    bottom:5vh;
     justify-content: space-between;
 }
 
-.slide-buttons >button{
+.slide-controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.slide-buttons > button{
     cursor: pointer;
     height: 5vh;
     width: 40vw;
@@ -481,7 +483,29 @@ nav#sticky-nav{
     color: var(--white);
     font-size: 2.5em;
     text-align: center;
+} */
+
+
+.project-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
 }
+
+.project-card.left{
+    flex-direction: row;
+}
+
+.project-card.right{
+    flex-direction: row-reverse;
+}
+
+.project-img{
+    width: 40%;
+}
+
 
 /*     CONTACT PAGE     */
 
@@ -552,6 +576,11 @@ nav#sticky-nav{
         width: 60vw;
         background-image: url(../assets/head-md.jpg);
     }
+
+    /* PROJECTS PAGE */
+    .project-img{
+        width: 70%
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -596,14 +625,15 @@ nav#sticky-nav{
         background-image: url('../assets/contact-bkgr.png');
     }
 
-    /*SKILLS PAGE*/
-    .project-img{
-        width: 65vh;
+    /*PROJECT PAGE*/
+    .project-info{
+        flex-direction: row;
+        padding: 5vw
     }
 
-    .slideshow{
-        margin: auto;
-        width: 70%;
+    .project-img{
+        width: 50%;
+        padding-right: 5vw;
     }
 }
 
@@ -638,8 +668,4 @@ nav#sticky-nav{
         bottom: 10vh;
     }
 
-    /*PROJECT PAGE*/
-    .project-info{
-        flex-direction: row;
-    }
 }
