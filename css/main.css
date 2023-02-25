@@ -396,9 +396,7 @@ nav#sticky-nav{
 
 /*     PROJECT PAGE     */
 #projects-page{
-    position: relative;
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -408,8 +406,7 @@ nav#sticky-nav{
     padding-bottom: 10vh;
 }
 
-.slideshow{
-    margin: auto;
+/* .slideshow{
     width: 100%;
 }
 
@@ -423,14 +420,14 @@ nav#sticky-nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10vw;
 }
 
 
 .project-img{
     width: 100%;
-    height: 40vh;
+    padding: 5vw;
 }
+
 
 .fade{
     animation-name: fade;
@@ -457,20 +454,25 @@ nav#sticky-nav{
     background-color: var(--white);
 }
 
-.slide-dots{
-    position: absolute;
-    bottom: 0;
-}
-
 .slide-buttons{
     display: flex;
     flex-direction: row;
-    position: absolute;
-    bottom:5vh;
     justify-content: space-between;
 }
 
-.slide-buttons >button{
+.slide-controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.slide-buttons > button{
     cursor: pointer;
     height: 5vh;
     width: 40vw;
@@ -479,7 +481,26 @@ nav#sticky-nav{
     color: var(--white);
     font-size: 2.5em;
     text-align: center;
+} */
+
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 5vh auto;
 }
+
+.project-img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 5vw;
+}
+
 
 /*     CONTACT PAGE     */
 
@@ -550,6 +571,11 @@ nav#sticky-nav{
         width: 60vw;
         background-image: url(../assets/head-md.jpg);
     }
+
+    /* PROJECTS PAGE */
+    /* .project-img{
+        width: 70%
+    } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -593,6 +619,29 @@ nav#sticky-nav{
     #contact-page{
         background-image: url('../assets/contact-bkgr.png');
     }
+
+    /*PROJECT PAGE*/
+    /* .project-info{
+        flex-direction: row;
+        padding: 5vw
+    }
+
+    .project-img{
+        width: 50%;
+        padding-right: 5vw;
+    } */
+
+    .project-card.left{
+        flex-direction: row;
+    }
+    
+    .project-card.right{
+        flex-direction: row-reverse;
+    }
+    
+    .project-img{
+        width: 40vw;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -626,5 +675,7 @@ nav#sticky-nav{
         bottom: 10vh;
     }
 
+
+    /*PROJECTS PAGE*/
 
 }
