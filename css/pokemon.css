@@ -98,3 +98,14 @@ button{
     border: 3px solid var(--yellow);
     background-color: white;
 }
+
+button a{
+    text-decoration: none;
+    color: #000000
+}
+
+#back{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
