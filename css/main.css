@@ -19,12 +19,6 @@ body{
     background-color: var(--black);
     color: var(--white);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    /* background-image: url(../assets/bkgr-sm.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
 }
 
 .container{
@@ -406,84 +400,6 @@ nav#sticky-nav{
     padding-bottom: 10vh;
 }
 
-/* .slideshow{
-    width: 100%;
-}
-
-.project-slide{
-    display: none;
-    flex-direction: column;
-}
-
-.project-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.project-img{
-    width: 100%;
-    padding: 5vw;
-}
-
-
-.fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
-}
-
-.dot{
-    cursor: pointer;
-    height: 3vh;
-    width: 3vh;
-    margin: 0 .5em;
-    background-color: var(--transWhite);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: var(--white);
-}
-
-.slide-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.slide-controls{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 10vh;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-.slide-buttons > button{
-    cursor: pointer;
-    height: 5vh;
-    width: 40vw;
-    background: none;
-    border: none;
-    color: var(--white);
-    font-size: 2.5em;
-    text-align: center;
-} */
-
-
 .project-card{
     display: flex;
     flex-direction: column;
@@ -572,21 +488,10 @@ nav#sticky-nav{
         background-image: url(../assets/head-md.jpg);
     }
 
-    /* PROJECTS PAGE */
-    /* .project-img{
-        width: 70%
-    } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    /* body{
-        background-image: url(../assets/bkgr.png);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    } */
 /*HOME PAGE*/
     #home-skills,
     #about-prev,
@@ -621,15 +526,6 @@ nav#sticky-nav{
     }
 
     /*PROJECT PAGE*/
-    /* .project-info{
-        flex-direction: row;
-        padding: 5vw
-    }
-
-    .project-img{
-        width: 50%;
-        padding-right: 5vw;
-    } */
 
     .project-card.left{
         flex-direction: row;
@@ -674,8 +570,4 @@ nav#sticky-nav{
         position: relative;
         bottom: 10vh;
     }
-
-
-    /*PROJECTS PAGE*/
-
 }
